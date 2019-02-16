@@ -488,6 +488,13 @@
       "readme": {
         "items": [
           {
+            "version": "v0.0.2",
+            "content": "add UpdateKernel Command",
+            "author": "liangxie",
+            "date": "2019 年 02 月 15 日 21:42",
+            "VersionNumber": 2
+          },
+          {
             "version": "v0.0.1",
             "content": "add mvvm graph designer",
             "author": "liangxie",
@@ -497,6 +504,25 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "v0.0.2",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://liangxiegame.com/media/7.MVVM_v0.0.2.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework/7.MVVM/",
+          "DocUrl": "http://liangxiegame.com",
+          "Readme": {
+            "version": "v0.0.2",
+            "content": "add UpdateKernel Command",
+            "author": "liangxie",
+            "date": "2019 年 02 月 15 日 21:42",
+            "VersionNumber": 2
+          },
+          "Id": "585",
+          "Name": "7.MVVM",
+          "VersionNumber": 2,
+          "FileName": "7.MVVM_v0.0.2.unitypackage"
+        },
         {
           "Version": "v0.0.1",
           "Type": 0,
@@ -517,13 +543,13 @@
           "FileName": "7.MVVM_v0.0.1.unitypackage"
         }
       ],
-      "Version": "v0.0.1",
-      "DownloadUrl": "http://liangxiegame.com/media/7.MVVM_v0.0.1.unitypackage",
+      "Version": "v0.0.2",
+      "DownloadUrl": "http://liangxiegame.com/media/7.MVVM_v0.0.2.unitypackage",
       "InstallPath": "Assets/QFramework/Framework/7.MVVM/",
       "DocUrl": "http://liangxiegame.com",
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 1,
+      "VersionNumber": 2,
       "Installed": false
     },
     {
