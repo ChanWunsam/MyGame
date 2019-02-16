@@ -39,14 +39,6 @@ namespace QFramework.TodoList
         }
     }
 
-    //===========================        状态           ======================================
-
-    public enum PanelTodoListState
-    {
-        Create,
-        Modify,
-    }
-
     //========================================================================================
 
 
@@ -62,7 +54,7 @@ namespace QFramework.TodoList
             }
         };
 
-        public PanelTodoListState State = PanelTodoListState.Create;
+        public PanelInputState State = PanelInputState.Create;
 
     }
 
@@ -119,7 +111,7 @@ namespace QFramework.TodoList
             // 删除todo / 清空输入 事件
             BtnDelete.onClick.AddListener(() =>
             {
-                if (mData.State == PanelTodoListState.Modify)
+                if (mData.State == PanelInputState.Modify)
                 {
                     
                 }
@@ -143,7 +135,7 @@ namespace QFramework.TodoList
                 TodoItem itemData = selectMsg.ItemData;
                 InputField.text = itemData.Content;
 
-                mData.State = PanelTodoListState.Modify;
+                mData.State = PanelInputState.Modify;
                 BtnOK.interactable = true;
                 BtnDelete.interactable = true;
             }

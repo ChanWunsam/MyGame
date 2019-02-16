@@ -33,13 +33,7 @@ namespace QFramework.TodoList
         public Button BtnCheckCompleted;
         
         [SerializeField()]
-        public InputField InputField;
-        
-        [SerializeField()]
-        public Button BtnOK;
-        
-        [SerializeField()]
-        public Button BtnDelete;
+        public PanelAddItem PanelAddItem;
         
         private PanelTodoListData mPrivateData = null;
         
@@ -61,9 +55,7 @@ namespace QFramework.TodoList
             Container = null;
             UITodoItem = null;
             BtnCheckCompleted = null;
-            InputField = null;
-            BtnOK = null;
-            BtnDelete = null;
+            PanelAddItem = null;
             mData = null;
         }
     }

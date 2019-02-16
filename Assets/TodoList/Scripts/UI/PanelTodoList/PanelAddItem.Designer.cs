@@ -8,7 +8,7 @@ using QFramework;
 
 namespace QFramework.TodoList
 {
-	public partial class PanelTodoAdd
+	public partial class PanelAddItem
 	{
 		[SerializeField] public InputField InputField;
 		[SerializeField] public Button BtnOK;
@@ -23,7 +23,7 @@ namespace QFramework.TodoList
 
 		public override string ComponentName
 		{
-			get { return "PanelTodoAdd";}
+			get { return "PanelAddItem";}
 		}
 	}
 }
