@@ -2,22 +2,22 @@
  * 2019.2 DESKTOP-ORJQHD3
  ****************************************************************************/
 
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
 
 namespace QFramework.TodoList
 {
-	public partial class PanelTodoAdd : UIElement
+	public partial class UIListCtrl
 	{
-		private void Awake()
+
+		public void Clear()
 		{
 		}
 
-		protected override void OnBeforeDestroy()
+		public override string ComponentName
 		{
+			get { return "UIListCtrl";}
 		}
 	}
 }

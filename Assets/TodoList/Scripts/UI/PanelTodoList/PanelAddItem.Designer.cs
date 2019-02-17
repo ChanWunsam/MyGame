@@ -8,22 +8,22 @@ using QFramework;
 
 namespace QFramework.TodoList
 {
-	public partial class PanelTodoAdd
+	public partial class PanelAddItem
 	{
 		[SerializeField] public InputField InputField;
-		[SerializeField] public Button BtnOK;
-		[SerializeField] public Button BtnDelete;
+		[SerializeField] public Button BtnUpdate;
+		[SerializeField] public Button BtnCancel;
 
 		public void Clear()
 		{
 			InputField = null;
-			BtnOK = null;
-			BtnDelete = null;
+			BtnUpdate = null;
+			BtnCancel = null;
 		}
 
 		public override string ComponentName
 		{
-			get { return "PanelTodoAdd";}
+			get { return "PanelAddItem";}
 		}
 	}
 }
