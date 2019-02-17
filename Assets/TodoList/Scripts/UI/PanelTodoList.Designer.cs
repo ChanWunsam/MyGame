@@ -24,7 +24,7 @@ namespace QFramework.TodoList
         public const string NAME = "PanelTodoList";
         
         [SerializeField()]
-        public RectTransform Container;
+        public UIListCtrl Container;
         
         [SerializeField()]
         public UITodoItem UITodoItem;

@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224950888588737786}
   - component: {fileID: 114378796851988132}
-  - component: {fileID: 114840385155881220}
+  - component: {fileID: 114352467142016596}
   m_Layer: 5
   m_Name: Container
   m_TagString: Untagged
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 114893571383242318}
   - component: {fileID: 114056610266911610}
   m_Layer: 5
-  m_Name: BtnOK
+  m_Name: BtnUpdate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,6 @@ GameObject:
   - component: {fileID: 222563049339558226}
   - component: {fileID: 114064972149203052}
   - component: {fileID: 114019995584188318}
-  - component: {fileID: 114191417261492656}
   m_Layer: 5
   m_Name: PanelAddItem
   m_TagString: Untagged
@@ -309,7 +308,7 @@ GameObject:
   - component: {fileID: 114871512414625750}
   - component: {fileID: 114595530778783010}
   m_Layer: 5
-  m_Name: BtnDelete
+  m_Name: BtnCancel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,6 +376,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4348c5f4de3a72349b37ad92a14faca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputField: {fileID: 114277961889463032}
+  BtnUpdate: {fileID: 114893571383242318}
+  BtnCancel: {fileID: 114871512414625750}
 --- !u!114 &114022308055263118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -409,7 +411,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: OK
+  m_Text: Update
 --- !u!114 &114056610266911610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -585,20 +587,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114191417261492656
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1824150067793640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4211833ca4e7a4984b2d973425a62933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MarkType: 0
-  CustomComponentName: PanelAddItem
-  CustomComment: 
 --- !u!114 &114212571086244724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -771,6 +759,17 @@ MonoBehaviour:
   MarkType: 0
   CustomComponentName: 
   CustomComment: 
+--- !u!114 &114352467142016596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1398720384411054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9097c2e2b8e5f4abf1b2b76dc6b684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114363760945600710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1031,7 +1030,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Delete
+  m_Text: Cancel
 --- !u!114 &114736422091132204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1132,20 +1131,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114840385155881220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1398720384411054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4211833ca4e7a4984b2d973425a62933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MarkType: 0
-  CustomComponentName: Container
-  CustomComment: 
 --- !u!114 &114851459694450006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1212,13 +1197,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mSubPanelInfos: []
-  Container: {fileID: 224950888588737786}
+  Container: {fileID: 114352467142016596}
   UITodoItem: {fileID: 114767342805937644}
   BtnCheckCompleted: {fileID: 114186306963253634}
   PanelAddItem: {fileID: 114019995584188318}
-  InputField: {fileID: 114277961889463032}
-  BtnOK: {fileID: 114893571383242318}
-  BtnDelete: {fileID: 114871512414625750}
 --- !u!114 &114871512414625750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1837,8 +1819,8 @@ RectTransform:
   m_Father: {fileID: 224371728369917950}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00003388554, y: -0.00002004596}
-  m_SizeDelta: {x: 0, y: 1136}
+  m_AnchoredPosition: {x: -0.00003388554, y: 0.0000056893446}
+  m_SizeDelta: {x: 0, y: -0.090026855}
   m_Pivot: {x: 0, y: 1}

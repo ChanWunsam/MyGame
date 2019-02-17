@@ -23,13 +23,7 @@ namespace QFramework.TodoList
             Completed.onValueChanged.AddListener(on =>
             {
                 mModel.Completed = on;
-                //Debug.Log(mModel.Content + ": " + mModel.Completed);
-                SendEvent(CompletedListEvent.OnDataChange);
-            });
-
-            AreaClick.onClick.AddListener(() =>
-            {
-                Debug.Log("Clicked");
+                this.DestroyGameObj();
             });
         }
 

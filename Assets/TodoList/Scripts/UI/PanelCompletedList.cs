@@ -34,14 +34,13 @@ namespace QFramework.TodoList
     public enum CompletedListEvent
     {
         Start = PanelTodoListEvent.End,
-        OnDataChange,
         End,
     }
     
     public partial class PanelCompletedList : QFramework.UIPanel
     {
         
-        public void OnDataChanged()
+        public void GenerateCompletedItem()
         {
             Container.DestroyAllChild();
             if (mData.Model.mTodoItems.IsNotNull())
@@ -59,10 +58,6 @@ namespace QFramework.TodoList
 
         protected override void ProcessMsg(int eventId, QFramework.QMsg msg)
         {
-            if (eventId == (int)CompletedListEvent.OnDataChange)
-            {
-                OnDataChanged();
-            }
         }
 
         protected override void RegisterUIEvent()
@@ -85,9 +80,7 @@ namespace QFramework.TodoList
             mData = uiData as PanelCompletedListData ?? new PanelCompletedListData();
             // please add init code here
 
-            OnDataChanged();
-
-            RegisterEvent(CompletedListEvent.OnDataChange);
+            GenerateCompletedItem();
         }
         
         protected override void OnOpen(QFramework.IUIData uiData)

@@ -5,6 +5,13 @@
       "readme": {
         "items": [
           {
+            "version": "v0.4.8",
+            "content": "fix MVVM's compile error",
+            "author": "liangxie",
+            "date": "2019 年 02 月 16 日 19:49",
+            "VersionNumber": 408
+          },
+          {
             "version": "v0.4.7",
             "content": "package admin view improvements",
             "author": "liangxie",
@@ -35,6 +42,25 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "v0.4.8",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://liangxiegame.com/media/0.Core_v0.4.8.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework/0.Core/",
+          "DocUrl": "http://liangxiegame.com",
+          "Readme": {
+            "version": "v0.4.8",
+            "content": "fix MVVM's compile error",
+            "author": "liangxie",
+            "date": "2019 年 02 月 16 日 19:49",
+            "VersionNumber": 408
+          },
+          "Id": "586",
+          "Name": "0.Core",
+          "VersionNumber": 408,
+          "FileName": "0.Core_v0.4.8.unitypackage"
+        },
         {
           "Version": "v0.4.7",
           "Type": 0,
@@ -112,13 +138,13 @@
           "FileName": "0.Core_v0.4.4.unitypackage"
         }
       ],
-      "Version": "v0.4.7",
-      "DownloadUrl": "http://liangxiegame.com/media/0.Core_v0.4.7.unitypackage",
+      "Version": "v0.4.8",
+      "DownloadUrl": "http://liangxiegame.com/media/0.Core_v0.4.8.unitypackage",
       "InstallPath": "Assets/QFramework/Framework/0.Core/",
       "DocUrl": "http://liangxiegame.com",
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 407,
+      "VersionNumber": 408,
       "Installed": true
     },
     {

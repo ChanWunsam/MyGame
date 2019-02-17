@@ -17,14 +17,12 @@ namespace QFramework.TodoList
         public void Init(TodoItem model)
         {
             mModel = model;
-
-            Content.text = model.Content;
-            Completed.isOn = model.Completed;
+            UpdateView();
 
             Completed.onValueChanged.AddListener(on =>
             {
                 mModel.Completed = on;
-                SendEvent(PanelTodoListEvent.OnDataChange);
+                this.DestroyGameObj();
             });
 
             AreaClick.onClick.AddListener(() =>
@@ -32,6 +30,13 @@ namespace QFramework.TodoList
                 // todo : UIÑÕÉ«±ä»¯
                 SendMsg(new OnTodoItemSelectMsg(mModel));
             });
+
+        }
+
+        public void UpdateView()
+        {
+            Content.text = mModel.Content;
+            Completed.isOn = mModel.Completed;
         }
 
         private void Awake()
