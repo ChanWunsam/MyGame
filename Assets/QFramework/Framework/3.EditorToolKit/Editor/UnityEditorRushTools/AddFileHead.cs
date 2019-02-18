@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Threading;
 using UnityEditor;
@@ -20,14 +20,14 @@ namespace QFramework
             string head = "" +
                     //自定义部分
                     "/*******************************************************************\n"
-                    + "* Copyright(c) 2019 DefaultCompany\n"
+                    + "* Copyright(c) #YEAR# #COMPANY#\n"
                     + "* All rights reserved.\n"
                     + "*\n"
-                    + "* 文件名称: AddFileHead.cs\n"
+                    + "* 文件名称: #SCRIPTFULLNAME#\n"
                     + "* 简要描述:\n"
                     + "* \n"
-                    + "* 创建日期: 2019/02/18 19:23:28\n"
-                    + "* 作者:     SilenceT\n"
+                    + "* 创建日期: #DATE#\n"
+                    + "* 作者:     #AUTHOR#\n"
                     + "* 说明:  \n"
                     + "******************************************************************/\n"
                     //以下部分unity默认文件
@@ -141,13 +141,13 @@ namespace QFramework
             //PlayerSettings.companyName = "";
 
             //这里现自定义的一些规则  
-            scriptContent = scriptContent.Replace("AddFileHead.cs", Path.GetFileName(newFilePath));
-            scriptContent = scriptContent.Replace("DefaultCompany", PlayerSettings.companyName);
-            scriptContent = scriptContent.Replace("SilenceT", "SilenceT");
-            scriptContent = scriptContent.Replace("1.0", "1.0");
-            scriptContent = scriptContent.Replace("2017.3.0f3", Application.unityVersion);
-            scriptContent = scriptContent.Replace("2019/02/18 19:23:28", System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
-            scriptContent = scriptContent.Replace("2019", System.DateTime.Now.ToString("yyyy"));
+            scriptContent = scriptContent.Replace("#SCRIPTFULLNAME#", Path.GetFileName(newFilePath));
+            scriptContent = scriptContent.Replace("#COMPANY#", PlayerSettings.companyName);
+            scriptContent = scriptContent.Replace("#AUTHOR#", "SilenceT");
+            scriptContent = scriptContent.Replace("#VERSION#", "1.0");
+            scriptContent = scriptContent.Replace("#UNITYVERSION#", Application.unityVersion);
+            scriptContent = scriptContent.Replace("#DATE#", System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+            scriptContent = scriptContent.Replace("#YEAR#", System.DateTime.Now.ToString("yyyy"));
 
             File.WriteAllText(realPath, scriptContent);
         }
