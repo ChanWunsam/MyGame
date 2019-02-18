@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
+using UniRx;
 
 namespace QFramework.TodoList
 {
@@ -17,26 +18,28 @@ namespace QFramework.TodoList
         public void Init(TodoItem model)
         {
             mModel = model;
-            UpdateView();
+
+            mModel.Content.Subscribe((content) =>
+            {
+                Content.text = content;
+            });
+            
+            Completed.isOn = mModel.Completed.Value;
 
             Completed.onValueChanged.AddListener(on =>
             {
-                mModel.Completed = on;
-                this.DestroyGameObj();
+                if (on)
+                {
+                    mModel.Completed.Value = on;
+                    this.DestroyGameObj();
+                }
             });
 
             AreaClick.onClick.AddListener(() =>
             {
-                // todo : UI��ɫ�仯
+                // todo : UI颜色
                 SendMsg(new OnTodoItemSelectMsg(mModel));
             });
-
-        }
-
-        public void UpdateView()
-        {
-            Content.text = mModel.Content;
-            Completed.isOn = mModel.Completed;
         }
 
         private void Awake()

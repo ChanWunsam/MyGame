@@ -18,15 +18,14 @@ namespace QFramework.TodoList
     using UnityEngine;
     using UnityEngine.UI;
     using QFramework;
+    using UniRx;
 
-    //=============================     ��Ϣ/�¼�    =========================================
+    //=============================     消息/事件    =========================================
 
     public enum PanelTodoListEvent
     {
         Start = QMgrID.UI,
         OnTodoItemSelect,
-        OnTodoItemAdd,
-        OnTodoItemUpdate,
         End,
     }
 
@@ -40,38 +39,18 @@ namespace QFramework.TodoList
         }
     }
 
-    public class OnTodoItemAddMsg : QMsg
-    {
-        public TodoItem ItemData;
-
-        public OnTodoItemAddMsg(TodoItem itemData) : base((int)PanelTodoListEvent.OnTodoItemAdd)
-        {
-            ItemData = itemData;
-        }
-    }
-
-    public class OnTodoItemUpdateMsg : QMsg
-    {
-        public TodoItem ItemData;
-
-        public OnTodoItemUpdateMsg(TodoItem itemData) : base((int)PanelTodoListEvent.OnTodoItemUpdate)
-        {
-            ItemData = itemData;
-        }
-    }
-
     //========================================================================================
 
 
     public class PanelTodoListData : QFramework.UIPanelData
     {
-        // ��������
+        // 测试数据
         public TodoList Model = new TodoList()
         {
-            mTodoItems = new List<TodoItem>()
+            TodoItems = new ReactiveCollection<TodoItem>()
             {
-                new TodoItem() { Completed = false, Content = "need to study" },
-                new TodoItem() { Completed = false, Content = "need to have lunch" },
+                new TodoItem() { Completed = new BoolReactiveProperty(false), Content = new StringReactiveProperty("need to study") },
+                new TodoItem() { Completed = new BoolReactiveProperty(false), Content = new StringReactiveProperty("need to have lunch") },
             }
         };
     }
@@ -90,18 +69,13 @@ namespace QFramework.TodoList
             PanelAddItem.ModifyState(itemData);
         }
 
-        void OnTodoItemUpdate(TodoItem itemData)
-        {
-            Container.UpdateTodoItem(itemData);
-        }
-
         // ==========================================================================
 
         protected override void RegisterUIEvent()
         {
             base.RegisterUIEvent();
             
-            // �鿴completed list�¼�
+            // 点击进入 completed list
             BtnCheckCompleted.onClick.AddListener(() =>
             {
                 CloseSelf();
@@ -117,22 +91,9 @@ namespace QFramework.TodoList
         {
             if (eventId == (int)PanelTodoListEvent.OnTodoItemSelect)
             {
-                // �޸�todo�¼�
+                // 选择todo事件
                 var selectMsg = msg as OnTodoItemSelectMsg;
                 OnTodoItemSelect(selectMsg.ItemData);
-            }
-            else if (eventId == (int)PanelTodoListEvent.OnTodoItemUpdate)
-            {
-                // ����todo�¼�
-                var UpdateMsg = msg as OnTodoItemUpdateMsg;
-                OnTodoItemUpdate(UpdateMsg.ItemData);
-            }
-            else if (eventId == (int)PanelTodoListEvent.OnTodoItemAdd)
-            {
-                // ����todo�¼�
-                var addMsg = msg as OnTodoItemAddMsg;
-                mData.Model.mTodoItems.Add(addMsg.ItemData);  // Model ������
-                OnTodoItemAdd(addMsg.ItemData);   // view ������
             }
         }
         
@@ -142,9 +103,25 @@ namespace QFramework.TodoList
             // please add init code here
             Container.GenerateTodoItem(mData.Model, UITodoItem);
             PanelAddItem.Init(mData.Model);
+
+            PanelAddItem.State.Subscribe((state) => 
+            {
+                if (state == PanelInputState.Create)
+                {
+                    EventMask.Hide();
+                }
+                else
+                {
+                    EventMask.Show();
+                }
+            });
+
+            mData.Model.TodoItems.ObserveAdd().Subscribe((newitem) =>
+            {
+                Container.AddTodoItem(UITodoItem, newitem.Value);
+            });
+
             RegisterEvent(PanelTodoListEvent.OnTodoItemSelect);
-            RegisterEvent(PanelTodoListEvent.OnTodoItemAdd);
-            RegisterEvent(PanelTodoListEvent.OnTodoItemUpdate);
         }
         
         protected override void OnOpen(QFramework.IUIData uiData)

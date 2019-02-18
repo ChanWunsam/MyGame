@@ -17,12 +17,12 @@ namespace QFramework.TodoList
         public void Init(TodoItem model)
         {
             mModel = model;
-            Completed.isOn = model.Completed;
-            Content.text = model.Content;
+            Completed.isOn = model.Completed.Value;
+            Content.text = model.Content.Value;
 
             Completed.onValueChanged.AddListener(on =>
             {
-                mModel.Completed = on;
+                mModel.Completed.Value = on;
                 this.DestroyGameObj();
             });
         }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx;
 
 namespace QFramework.TodoList
 {
@@ -30,25 +31,24 @@ namespace QFramework.TodoList
 
     public class TodoList
     {
-        public List<TodoItem> mTodoItems = new List<TodoItem>();
+        public ReactiveCollection<TodoItem> TodoItems = new ReactiveCollection<TodoItem>();
 
         public static TodoList Load()
         {
-            var jsonContent = PlayerPrefs.GetString("TodoListData", string.Empty);
-
+            var jsonContent = PlayerPrefs.GetString("mTodoListData", string.Empty);
             return jsonContent.IsNotNullAndEmpty() ? jsonContent.FromJson<TodoList>() : new TodoList();
         }
 
         public void Save()
         {
-            PlayerPrefs.SetString("TodoListData", this.ToJson());
+            PlayerPrefs.SetString("mTodoListData", this.ToJson());
         }
     }
 
     public class TodoItem
     {
-        public bool Completed;
+        public BoolReactiveProperty Completed = new BoolReactiveProperty(false);
 
-        public string Content;
+        public StringReactiveProperty Content = new StringReactiveProperty(string.Empty);
     }
 }

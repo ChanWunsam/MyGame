@@ -34,24 +34,15 @@ namespace QFramework.TodoList
 
         Dictionary<TodoItem, UITodoItem> mItemDataForView = new Dictionary<TodoItem, UITodoItem>();
 
-        public void UpdateTodoItem(TodoItem itemData)
-        {
-            mItemDataForView[itemData].UpdateView();
-        }
-
-        public void ModifyTodoItem(UITodoItem itemPrefab, TodoItem item)
-        {
-
-        }
 
         public void GenerateTodoItem(TodoList model, UITodoItem itemPrefab)
         {
             this.DestroyAllChild();
             mItemDataForView.Clear();
 
-            if (model.mTodoItems.IsNotNull())
+            if (model.TodoItems.IsNotNull())
             {
-                model.mTodoItems.Where(item => !item.Completed).ForEach(item =>
+                model.TodoItems.Where(item => !item.Completed.Value).ForEach(item =>
                 {
                     AddTodoItem(itemPrefab, item);
                 });

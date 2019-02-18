@@ -16,17 +16,18 @@ namespace QFramework.TodoList
     using System.Linq;
     using UnityEngine;
     using UnityEngine.UI;
+    using UniRx;
 
 
     public class PanelCompletedListData : QFramework.UIPanelData
     {
-        // ��������
+        // 测试数据
         public TodoList Model = new TodoList()
         {
-            mTodoItems = new List<TodoItem>()
+            TodoItems = new ReactiveCollection<TodoItem>()
             {
-                new TodoItem() { Completed = true, Content = "need to study" },
-                new TodoItem() { Completed = true, Content = "need to have lunch" },
+                new TodoItem() { Completed = new BoolReactiveProperty(true), Content = new StringReactiveProperty("need to study") },
+                new TodoItem() { Completed = new BoolReactiveProperty(true), Content = new StringReactiveProperty("need to have lunch") },
             }
         };
     }
@@ -43,9 +44,9 @@ namespace QFramework.TodoList
         public void GenerateCompletedItem()
         {
             Container.DestroyAllChild();
-            if (mData.Model.mTodoItems.IsNotNull())
+            if (mData.Model.TodoItems.IsNotNull())
             {
-                mData.Model.mTodoItems.Where(item => item.Completed).ForEach(item =>
+                mData.Model.TodoItems.Where(item => item.Completed.Value).ForEach(item =>
                 {
                     UICompletedItem.Instantiate()
                                 .Parent(Container)

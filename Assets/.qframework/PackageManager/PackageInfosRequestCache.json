@@ -264,11 +264,11 @@
       "readme": {
         "items": [
           {
-            "version": "v0.2.0",
-            "content": "bug fixes",
+            "version": "v0.2.1",
+            "content": "restore Editor Tool Kit",
             "author": "liangxie",
-            "date": "2019 年 02 月 18 日 14:26",
-            "VersionNumber": 200
+            "date": "2019 年 02 月 18 日 20:20",
+            "VersionNumber": 201
           },
           {
             "version": "v0.1.1",
@@ -288,23 +288,23 @@
       },
       "PackageVersions": [
         {
-          "Version": "v0.2.0",
+          "Version": "v0.2.1",
           "Type": 0,
           "AccessRight": 0,
-          "DownloadUrl": "http://liangxiegame.com/media/3.EditorToolKit_v0.2.0.unitypackage",
+          "DownloadUrl": "http://liangxiegame.com/media/3.EditorToolKit_v0.2.1.unitypackage",
           "InstallPath": "Assets/QFramework/Framework/3.EditorToolKit/",
           "DocUrl": "http://liangxiegame.com",
           "Readme": {
-            "version": "v0.2.0",
-            "content": "bug fixes",
+            "version": "v0.2.1",
+            "content": "restore Editor Tool Kit",
             "author": "liangxie",
-            "date": "2019 年 02 月 18 日 14:26",
-            "VersionNumber": 200
+            "date": "2019 年 02 月 18 日 20:20",
+            "VersionNumber": 201
           },
-          "Id": "588",
+          "Id": "589",
           "Name": "3.EditorToolKit",
-          "VersionNumber": 200,
-          "FileName": "3.EditorToolKit_v0.2.0.unitypackage"
+          "VersionNumber": 201,
+          "FileName": "3.EditorToolKit_v0.2.1.unitypackage"
         },
         {
           "Version": "v0.1.1",
@@ -345,13 +345,13 @@
           "FileName": "3.EditorToolKit_v0.1.0.unitypackage"
         }
       ],
-      "Version": "v0.2.0",
-      "DownloadUrl": "http://liangxiegame.com/media/3.EditorToolKit_v0.2.0.unitypackage",
+      "Version": "v0.2.1",
+      "DownloadUrl": "http://liangxiegame.com/media/3.EditorToolKit_v0.2.1.unitypackage",
       "InstallPath": "Assets/QFramework/Framework/3.EditorToolKit/",
       "DocUrl": "http://liangxiegame.com",
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 200,
+      "VersionNumber": 201,
       "Installed": true
     },
     {

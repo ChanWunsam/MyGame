@@ -35,6 +35,9 @@ namespace QFramework.TodoList
         [SerializeField()]
         public PanelAddItem PanelAddItem;
         
+        [SerializeField()]
+        public Image EventMask;
+        
         private PanelTodoListData mPrivateData = null;
         
         public PanelTodoListData mData
@@ -56,6 +59,7 @@ namespace QFramework.TodoList
             UITodoItem = null;
             BtnCheckCompleted = null;
             PanelAddItem = null;
+            EventMask = null;
             mData = null;
         }
     }

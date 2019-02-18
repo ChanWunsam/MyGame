@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
+using UniRx;
 
 namespace QFramework.TodoList
 {
@@ -19,21 +20,7 @@ namespace QFramework.TodoList
 
     public partial class PanelAddItem : UIElement
 	{
-        private PanelInputState mState;
-        public PanelInputState State {
-            get
-            {
-                return mState;
-            }
-            private set
-            {
-                if (mState != value) {
-                    mState = value;
-                    OnStateChanged.InvokeGracefully();
-                }
-            }
-        }
-        public Action OnStateChanged;
+        public ReactiveProperty<PanelInputState> State = new ReactiveProperty<PanelInputState>(PanelInputState.Create);
 
         TodoItem mSelectedItemModel;
         TodoList mTodoModel;
@@ -41,42 +28,53 @@ namespace QFramework.TodoList
         public void Init(TodoList todoModel)
         {
             mTodoModel = todoModel;
-            State = PanelInputState.Create;
+            State.Value = PanelInputState.Create;
         }
 
         public void ModifyState(TodoItem selectedItemModel)
         {
             mSelectedItemModel = selectedItemModel;
-            State = PanelInputState.Modify;
-
-            InputField.text = selectedItemModel.Content;
-            BtnUpdate.interactable = false;
-            BtnCancel.interactable = true;
+            InputField.text = selectedItemModel.Content.Value;
+            State.Value = PanelInputState.Modify;
         }
 
         void CreateState()
         {
-            State = PanelInputState.Create;
-            BtnUpdate.interactable = false;
-            BtnCancel.interactable = false;
-            InputField.text = string.Empty;
+            State.Value = PanelInputState.Create;
         }
 
 		private void Awake()
 		{
-            // ����ȡ���¼�
+            // 注册状态更改的委托
+            State.Subscribe((state) => 
+            {
+                if (state == PanelInputState.Create)
+                {
+                    BtnUpdate.interactable = false;
+                    BtnCancel.interactable = false;
+                    InputField.text = string.Empty;
+                }
+                else
+                {
+                    BtnUpdate.interactable = false;
+                    BtnCancel.interactable = true;
+                }
+            });
+
+
+            // 点击取消事件
             BtnCancel.onClick.AddListener(CreateState);
 
-            // �����Ƿ����޸�
+            // 修改事件
             InputField.onValueChanged.AddListener((content) =>
             {
-                if (State == PanelInputState.Modify)
+                if (State.Value == PanelInputState.Modify)
                 {
-                    if (content != mSelectedItemModel.Content && !BtnUpdate.interactable)
+                    if (content != mSelectedItemModel.Content.Value && !BtnUpdate.interactable)
                     {
                         BtnUpdate.interactable = true;
                     }
-                    else if (content == mSelectedItemModel.Content && BtnUpdate.interactable)
+                    else if (content == mSelectedItemModel.Content.Value && BtnUpdate.interactable)
                     {
                         BtnUpdate.interactable = false;
                     }
@@ -94,26 +92,25 @@ namespace QFramework.TodoList
                 }
             });
 
-            // ���������¼�
+            // 点击更新事件
             BtnUpdate.onClick.AddListener(() =>
             {
-                mSelectedItemModel.Content = InputField.text;   
-                SendMsg(new OnTodoItemUpdateMsg(mSelectedItemModel));  // �޸�todo
+                mSelectedItemModel.Content.Value = InputField.text;   
                 CreateState();
             });
 
-            // �س��¼�
+            // 回车事件
             InputField.onEndEdit.AddListener((content) =>
             {
-                if (State == PanelInputState.Create)    // ����todo
+                if (State.Value == PanelInputState.Create)
                 {
                     if (content.IsNotNullAndEmpty() && Input.GetKeyDown(KeyCode.Return))
                     {
-                        SendMsg(new OnTodoItemAddMsg(new TodoItem()
-                        {
-                            Completed = false,
-                            Content = content,
-                        }));
+                        // 对 model 层更新
+                        var item = new TodoItem();
+                        item.Content.Value = content;
+
+                        mTodoModel.TodoItems.Add(item);
                     }
                     InputField.text = string.Empty; 
                 }
