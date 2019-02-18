@@ -15,6 +15,8 @@ namespace QFramework.TodoList
 	{
         public TodoItem mModel;
 
+        public ReactiveProperty<TodoItem> mSelectedModel = new ReactiveProperty<TodoItem>();
+
         public void Init(TodoItem model)
         {
             mModel = model;
@@ -37,8 +39,9 @@ namespace QFramework.TodoList
 
             AreaClick.onClick.AddListener(() =>
             {
-                // todo : UI颜色
-                SendMsg(new OnTodoItemSelectMsg(mModel));
+                Debug.Log("Click Todo Item");
+                // bug: 由于只改动一次值，导致只能点击修改一次
+                mSelectedModel.Value = mModel;  
             });
         }
 

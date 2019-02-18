@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
 using System.Linq;
+using UniRx;
 
 namespace QFramework.TodoList
 {
@@ -22,23 +23,22 @@ namespace QFramework.TodoList
 		{
 		}
 
+        public ReactiveProperty<TodoItem> mSelectedModel = new ReactiveProperty<TodoItem>();
+
         public void AddTodoItem(UITodoItem itemPrefab, TodoItem item)
         {
             itemPrefab.Instantiate()
                     .Parent(this)
                     .LocalIdentity()
                     .ApplySelfTo(self => self.Init(item))
-                    .ApplySelfTo(self => mItemDataForView.Add(item, self))
+                    .ApplySelfTo(self => self.mSelectedModel.Skip(1).Subscribe(model => mSelectedModel.Value = model))
                     .Show();
         }
-
-        Dictionary<TodoItem, UITodoItem> mItemDataForView = new Dictionary<TodoItem, UITodoItem>();
 
 
         public void GenerateTodoItem(TodoList model, UITodoItem itemPrefab)
         {
             this.DestroyAllChild();
-            mItemDataForView.Clear();
 
             if (model.TodoItems.IsNotNull())
             {

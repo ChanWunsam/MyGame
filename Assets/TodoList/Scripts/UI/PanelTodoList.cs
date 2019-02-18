@@ -25,20 +25,8 @@ namespace QFramework.TodoList
     public enum PanelTodoListEvent
     {
         Start = QMgrID.UI,
-        OnTodoItemSelect,
         End,
     }
-
-    public class OnTodoItemSelectMsg : QMsg
-    {
-        public TodoItem ItemData;
-
-        public OnTodoItemSelectMsg(TodoItem itemData) : base((int)PanelTodoListEvent.OnTodoItemSelect)
-        {
-            ItemData = itemData;
-        }
-    }
-
     //========================================================================================
 
 
@@ -58,43 +46,9 @@ namespace QFramework.TodoList
 
     public partial class PanelTodoList : QFramework.UIPanel
     {
-        
-        void OnTodoItemAdd(TodoItem itemData)
-        {
-            Container.AddTodoItem(UITodoItem, itemData);
-        }
-
-        void OnTodoItemSelect(TodoItem itemData)
-        {
-            PanelAddItem.ModifyState(itemData);
-        }
-
-        // ==========================================================================
-
-        protected override void RegisterUIEvent()
-        {
-            base.RegisterUIEvent();
-            
-            // 点击进入 completed list
-            BtnCheckCompleted.onClick.AddListener(() =>
-            {
-                CloseSelf();
-                UIMgr.OpenPanel<PanelCompletedList>(new PanelCompletedListData()
-                {
-                    Model = mData.Model,
-                });
-            });
-            
-        }
 
         protected override void ProcessMsg(int eventId, QFramework.QMsg msg)
         {
-            if (eventId == (int)PanelTodoListEvent.OnTodoItemSelect)
-            {
-                // 选择todo事件
-                var selectMsg = msg as OnTodoItemSelectMsg;
-                OnTodoItemSelect(selectMsg.ItemData);
-            }
         }
         
         protected override void OnInit(QFramework.IUIData uiData)
@@ -104,6 +58,7 @@ namespace QFramework.TodoList
             Container.GenerateTodoItem(mData.Model, UITodoItem);
             PanelAddItem.Init(mData.Model);
 
+            // 选择todo之后屏蔽点击事件
             PanelAddItem.State.Subscribe((state) => 
             {
                 if (state == PanelInputState.Create)
@@ -116,12 +71,24 @@ namespace QFramework.TodoList
                 }
             });
 
+            // 添加todo事件
             mData.Model.TodoItems.ObserveAdd().Subscribe((newitem) =>
             {
                 Container.AddTodoItem(UITodoItem, newitem.Value);
             });
+            
+            // 修改todo事件
+            Container.mSelectedModel.Skip(1).Subscribe(PanelAddItem.ModifyState);
 
-            RegisterEvent(PanelTodoListEvent.OnTodoItemSelect);
+            // 点击进入 completed list 列表
+            BtnCheckCompleted.onClick.AddListener(() =>
+            {
+                CloseSelf();
+                UIMgr.OpenPanel<PanelCompletedList>(new PanelCompletedListData()
+                {
+                    Model = mData.Model,
+                });
+            });
         }
         
         protected override void OnOpen(QFramework.IUIData uiData)

@@ -65,7 +65,7 @@ namespace QFramework.TodoList
         {
             base.RegisterUIEvent();
 
-            // �鿴todo List�¼�
+            // 点击进入 todo List 列表
             BtnCheckTodo.onClick.AddListener(() =>
             {
                 CloseSelf();

@@ -33,9 +33,9 @@ namespace QFramework.TodoList
 
         public void ModifyState(TodoItem selectedItemModel)
         {
+            State.Value = PanelInputState.Modify;
             mSelectedItemModel = selectedItemModel;
             InputField.text = selectedItemModel.Content.Value;
-            State.Value = PanelInputState.Modify;
         }
 
         void CreateState()
@@ -45,7 +45,7 @@ namespace QFramework.TodoList
 
 		private void Awake()
 		{
-            // 注册状态更改的委托
+            // 监听状态，显示不同的UI界面
             State.Subscribe((state) => 
             {
                 if (state == PanelInputState.Create)
@@ -53,11 +53,13 @@ namespace QFramework.TodoList
                     BtnUpdate.interactable = false;
                     BtnCancel.interactable = false;
                     InputField.text = string.Empty;
+                    Debug.Log("State: Create");
                 }
                 else
                 {
                     BtnUpdate.interactable = false;
                     BtnCancel.interactable = true;
+                    Debug.Log("State: Modify");
                 }
             });
 
