@@ -1,4 +1,4 @@
-﻿#define FAST_EVENTS
+#define FAST_EVENTS
 using System;
 using System.Collections;
 using System.Collections.Generic;

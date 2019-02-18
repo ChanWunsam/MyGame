@@ -264,6 +264,13 @@
       "readme": {
         "items": [
           {
+            "version": "v0.2.0",
+            "content": "bug fixes",
+            "author": "liangxie",
+            "date": "2019 年 02 月 18 日 14:26",
+            "VersionNumber": 200
+          },
+          {
             "version": "v0.1.1",
             "content": "fix 2018.1 compile error",
             "author": "liangxie",
@@ -280,6 +287,25 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "v0.2.0",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://liangxiegame.com/media/3.EditorToolKit_v0.2.0.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework/3.EditorToolKit/",
+          "DocUrl": "http://liangxiegame.com",
+          "Readme": {
+            "version": "v0.2.0",
+            "content": "bug fixes",
+            "author": "liangxie",
+            "date": "2019 年 02 月 18 日 14:26",
+            "VersionNumber": 200
+          },
+          "Id": "588",
+          "Name": "3.EditorToolKit",
+          "VersionNumber": 200,
+          "FileName": "3.EditorToolKit_v0.2.0.unitypackage"
+        },
         {
           "Version": "v0.1.1",
           "Type": 0,
@@ -319,13 +345,13 @@
           "FileName": "3.EditorToolKit_v0.1.0.unitypackage"
         }
       ],
-      "Version": "v0.1.1",
-      "DownloadUrl": "http://liangxiegame.com/media/3.EditorToolKit_v0.1.1.unitypackage",
+      "Version": "v0.2.0",
+      "DownloadUrl": "http://liangxiegame.com/media/3.EditorToolKit_v0.2.0.unitypackage",
       "InstallPath": "Assets/QFramework/Framework/3.EditorToolKit/",
       "DocUrl": "http://liangxiegame.com",
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 101,
+      "VersionNumber": 200,
       "Installed": true
     },
     {

@@ -1,4 +1,4 @@
-﻿namespace BindingsRx.Converters
+namespace BindingsRx.Converters
 {
     public class TextToDoubleConverter : IConverter<string, double>, IConverter<double, string>
     {

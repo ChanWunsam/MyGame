@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using BindingsRx.Converters;
 using BindingsRx.Filters;
 using UniRx;

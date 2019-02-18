@@ -1,4 +1,4 @@
-﻿namespace QFramework.GraphDesigner
+namespace QFramework.GraphDesigner
 {
     public interface IPlatformPreferences
     {

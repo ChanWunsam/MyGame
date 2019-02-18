@@ -1,4 +1,4 @@
-﻿namespace QFramework.GraphDesigner.Pro
+namespace QFramework.GraphDesigner.Pro
 {
     public interface ITemplateClass<TData>
     {

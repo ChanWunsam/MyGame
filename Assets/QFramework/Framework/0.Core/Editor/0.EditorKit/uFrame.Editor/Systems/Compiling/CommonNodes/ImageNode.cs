@@ -1,4 +1,4 @@
-﻿using Invert.Data;
+using Invert.Data;
 using QFramework;
 using QFramework.Json;
 using UnityEngine;

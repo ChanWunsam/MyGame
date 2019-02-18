@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using QFramework.GraphDesigner;
 using Invert.Data;
 using UnityEditor;

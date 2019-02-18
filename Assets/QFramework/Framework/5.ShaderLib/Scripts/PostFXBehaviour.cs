@@ -1,4 +1,4 @@
-﻿namespace QFramework
+namespace QFramework
 {
 	using UnityEngine;
 

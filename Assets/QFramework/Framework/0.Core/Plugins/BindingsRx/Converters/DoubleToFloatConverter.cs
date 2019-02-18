@@ -1,4 +1,4 @@
-﻿namespace BindingsRx.Converters
+namespace BindingsRx.Converters
 {
     public class DoubleToFloatConverter : IConverter<double, float>, IConverter<float, double>
     {

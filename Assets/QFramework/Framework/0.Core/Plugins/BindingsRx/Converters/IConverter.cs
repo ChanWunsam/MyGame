@@ -1,4 +1,4 @@
-﻿namespace BindingsRx.Converters
+namespace BindingsRx.Converters
 {
     public interface IConverter<T1, T2>
     {

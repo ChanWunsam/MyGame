@@ -1,4 +1,4 @@
-﻿using QFramework.GraphDesigner;
+using QFramework.GraphDesigner;
 
 public class StepCommand : Command
 {

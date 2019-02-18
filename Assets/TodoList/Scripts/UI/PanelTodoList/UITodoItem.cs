@@ -27,7 +27,7 @@ namespace QFramework.TodoList
 
             AreaClick.onClick.AddListener(() =>
             {
-                // todo : UI颜色变化
+                // todo : UI锟斤拷色锟戒化
                 SendMsg(new OnTodoItemSelectMsg(mModel));
             });
 

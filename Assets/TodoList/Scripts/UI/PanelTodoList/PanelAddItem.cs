@@ -64,10 +64,10 @@ namespace QFramework.TodoList
 
 		private void Awake()
 		{
-            // µã»÷È¡ÏûÊÂ¼þ
+            // ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â¼ï¿½
             BtnCancel.onClick.AddListener(CreateState);
 
-            // ¼à²âÊÇ·ñÓÐÐÞ¸Ä
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½
             InputField.onValueChanged.AddListener((content) =>
             {
                 if (State == PanelInputState.Modify)
@@ -94,18 +94,18 @@ namespace QFramework.TodoList
                 }
             });
 
-            // µã»÷¸üÐÂÊÂ¼þ
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
             BtnUpdate.onClick.AddListener(() =>
             {
                 mSelectedItemModel.Content = InputField.text;   
-                SendMsg(new OnTodoItemUpdateMsg(mSelectedItemModel));  // ÐÞ¸Ätodo
+                SendMsg(new OnTodoItemUpdateMsg(mSelectedItemModel));  // ï¿½Þ¸ï¿½todo
                 CreateState();
             });
 
-            // »Ø³µÊÂ¼þ
+            // ï¿½Ø³ï¿½ï¿½Â¼ï¿½
             InputField.onEndEdit.AddListener((content) =>
             {
-                if (State == PanelInputState.Create)    // Ìí¼Ótodo
+                if (State == PanelInputState.Create)    // ï¿½ï¿½ï¿½ï¿½todo
                 {
                     if (content.IsNotNullAndEmpty() && Input.GetKeyDown(KeyCode.Return))
                     {

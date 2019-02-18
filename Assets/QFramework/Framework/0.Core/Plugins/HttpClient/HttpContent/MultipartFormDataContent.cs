@@ -1,4 +1,4 @@
-﻿
+
 namespace CI.HttpClient
 {
     public class MultipartFormDataContent : MultipartContent

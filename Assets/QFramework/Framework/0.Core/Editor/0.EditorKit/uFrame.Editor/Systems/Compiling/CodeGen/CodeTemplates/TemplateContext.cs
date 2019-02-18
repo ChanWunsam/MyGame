@@ -1,4 +1,4 @@
-﻿using System.CodeDom;
+using System.CodeDom;
 
 namespace QFramework.GraphDesigner.Pro
 {

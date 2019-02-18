@@ -1,4 +1,4 @@
-﻿namespace BindingsRx
+namespace BindingsRx
 {
     public enum BindingTypes
     {

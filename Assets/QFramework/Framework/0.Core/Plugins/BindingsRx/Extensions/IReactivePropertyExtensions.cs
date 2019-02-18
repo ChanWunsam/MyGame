@@ -1,4 +1,4 @@
-﻿using UniRx;
+using UniRx;
 
 namespace BindingsRx.Extensions
 {

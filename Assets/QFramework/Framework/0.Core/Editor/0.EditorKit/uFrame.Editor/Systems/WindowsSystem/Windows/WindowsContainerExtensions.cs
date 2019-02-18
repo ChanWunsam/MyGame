@@ -1,4 +1,4 @@
-﻿using QFramework;
+using QFramework;
 
 namespace Invert.Windows
 {

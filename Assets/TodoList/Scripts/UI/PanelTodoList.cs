@@ -19,7 +19,7 @@ namespace QFramework.TodoList
     using UnityEngine.UI;
     using QFramework;
 
-    //=============================     ÏûÏ¢/ÊÂ¼þ    =========================================
+    //=============================     ï¿½ï¿½Ï¢/ï¿½Â¼ï¿½    =========================================
 
     public enum PanelTodoListEvent
     {
@@ -65,7 +65,7 @@ namespace QFramework.TodoList
 
     public class PanelTodoListData : QFramework.UIPanelData
     {
-        // ²âÊÔÓÃÀý
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public TodoList Model = new TodoList()
         {
             mTodoItems = new List<TodoItem>()
@@ -101,7 +101,7 @@ namespace QFramework.TodoList
         {
             base.RegisterUIEvent();
             
-            // ²é¿´completed listÊÂ¼þ
+            // ï¿½é¿´completed listï¿½Â¼ï¿½
             BtnCheckCompleted.onClick.AddListener(() =>
             {
                 CloseSelf();
@@ -117,22 +117,22 @@ namespace QFramework.TodoList
         {
             if (eventId == (int)PanelTodoListEvent.OnTodoItemSelect)
             {
-                // ÐÞ¸ÄtodoÊÂ¼þ
+                // ï¿½Þ¸ï¿½todoï¿½Â¼ï¿½
                 var selectMsg = msg as OnTodoItemSelectMsg;
                 OnTodoItemSelect(selectMsg.ItemData);
             }
             else if (eventId == (int)PanelTodoListEvent.OnTodoItemUpdate)
             {
-                // ¸üÐÂtodoÊÂ¼þ
+                // ï¿½ï¿½ï¿½ï¿½todoï¿½Â¼ï¿½
                 var UpdateMsg = msg as OnTodoItemUpdateMsg;
                 OnTodoItemUpdate(UpdateMsg.ItemData);
             }
             else if (eventId == (int)PanelTodoListEvent.OnTodoItemAdd)
             {
-                // Ìí¼ÓtodoÊÂ¼þ
+                // ï¿½ï¿½ï¿½ï¿½todoï¿½Â¼ï¿½
                 var addMsg = msg as OnTodoItemAddMsg;
-                mData.Model.mTodoItems.Add(addMsg.ItemData);  // Model ²ã¸üÐÂ
-                OnTodoItemAdd(addMsg.ItemData);   // view ²ã¸üÐÂ
+                mData.Model.mTodoItems.Add(addMsg.ItemData);  // Model ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                OnTodoItemAdd(addMsg.ItemData);   // view ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             }
         }
         

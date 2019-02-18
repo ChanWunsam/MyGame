@@ -1,4 +1,4 @@
-﻿using Invert.Data;
+using Invert.Data;
 using System;
 using System.Collections.Generic;
 using System.IO;

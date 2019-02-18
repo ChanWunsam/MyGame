@@ -1,4 +1,4 @@
-﻿namespace BindingsRx.Converters
+namespace BindingsRx.Converters
 {
     public class TextToFloatConverter : IConverter<string, float>, IConverter<float, string>
     {

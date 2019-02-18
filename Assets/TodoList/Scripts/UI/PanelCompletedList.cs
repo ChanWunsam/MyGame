@@ -20,7 +20,7 @@ namespace QFramework.TodoList
 
     public class PanelCompletedListData : QFramework.UIPanelData
     {
-        // ²âÊÔÓÃÀý
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public TodoList Model = new TodoList()
         {
             mTodoItems = new List<TodoItem>()
@@ -64,7 +64,7 @@ namespace QFramework.TodoList
         {
             base.RegisterUIEvent();
 
-            // ²é¿´todo ListÊÂ¼þ
+            // ï¿½é¿´todo Listï¿½Â¼ï¿½
             BtnCheckTodo.onClick.AddListener(() =>
             {
                 CloseSelf();

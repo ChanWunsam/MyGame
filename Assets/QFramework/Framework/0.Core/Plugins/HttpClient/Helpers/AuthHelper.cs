@@ -1,4 +1,4 @@
-﻿
+
 namespace CI.HttpClient.Helpers
 {
     public static class AuthHelper

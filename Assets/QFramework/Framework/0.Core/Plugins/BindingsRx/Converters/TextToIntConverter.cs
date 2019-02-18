@@ -1,4 +1,4 @@
-﻿namespace BindingsRx.Converters
+namespace BindingsRx.Converters
 {
     public class TextToIntConverter : IConverter<string, int>, IConverter<int, string>
     {

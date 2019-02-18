@@ -1,4 +1,4 @@
-﻿
+
 namespace CI.HttpClient
 {
     /// <summary>

@@ -1,4 +1,4 @@
-﻿namespace uFrame.Kernel
+namespace uFrame.Kernel
 {
     public interface IScene
     {

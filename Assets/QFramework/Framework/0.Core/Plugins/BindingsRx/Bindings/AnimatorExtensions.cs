@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using BindingsRx.Extensions;
 using BindingsRx.Filters;
 using UniRx;
