@@ -18,10 +18,10 @@ namespace QFramework.MyGame
     using UnityEngine.UI;
     
     
-    public partial class MyGameBg
+    public partial class GameMgr
     {
         
-        public const string NAME = "MyGameBg";
+        public const string NAME = "GameMgr";
         
         [SerializeField()]
         public UIUsrCardsArea UIUsrCardsArea;
@@ -29,13 +29,13 @@ namespace QFramework.MyGame
         [SerializeField()]
         public UICard UICard;
         
-        private MyGameBgData mPrivateData = null;
+        private GameMgrData mPrivateData = null;
         
-        public MyGameBgData mData
+        public GameMgrData mData
         {
             get
             {
-                return mPrivateData ?? (mPrivateData = new MyGameBgData());
+                return mPrivateData ?? (mPrivateData = new GameMgrData());
             }
             set
             {

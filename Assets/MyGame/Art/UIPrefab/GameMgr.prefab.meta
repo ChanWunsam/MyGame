@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 33b6602994ecbfc4ca37c437ee70a361
-timeCreated: 1550114045
+guid: cd12f8ab086d08347a16f50c45900038
+timeCreated: 1550646559
 licenseType: Free
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 100100000
   userData: 
-  assetBundleName: mygamebg_prefab
+  assetBundleName: gamemgr_prefab
   assetBundleVariant: 

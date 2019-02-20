@@ -18,7 +18,7 @@ namespace QFramework.MyGame
     using UnityEngine.UI;
     
     
-    public class MyGameBgData : QFramework.UIPanelData
+    public class GameMgrData : QFramework.UIPanelData
     {
         public InitCard Model = new InitCard()
         {
@@ -31,7 +31,7 @@ namespace QFramework.MyGame
         };
     }
     
-    public partial class MyGameBg : QFramework.UIPanel
+    public partial class GameMgr : QFramework.UIPanel
     {
         
         protected override void ProcessMsg(int eventId, QFramework.QMsg msg)
@@ -41,8 +41,9 @@ namespace QFramework.MyGame
         
         protected override void OnInit(QFramework.IUIData uiData)
         {
-            mData = uiData as MyGameBgData ?? new MyGameBgData();
+            mData = uiData as GameMgrData ?? new GameMgrData();
             // please add init code here
+
             UIUsrCardsArea.Init(UICard, mData.Model);
         }
         

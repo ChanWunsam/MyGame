@@ -7,6 +7,16 @@ namespace QFramework.MyGame
 {
     public class App : MonoBehaviour
     {
+        InitCard Model = new InitCard()
+        { 
+            Cards = new List<Card>()
+            {
+                new Card() {HP_damage = 10, MP_need = 10},
+                new Card() {HP_damage = 10, MP_need = 10},
+                new Card() {HP_damage = 10, MP_need = 10},
+            }
+        };
+    
 
         // Use this for initialization
         void Start()
@@ -14,8 +24,10 @@ namespace QFramework.MyGame
             ResMgr.Init();
             UIMgr.SetResolution(1024, 768, 0);
 
-            UIMgr.OpenPanel<MyGameBg>();
-            
+            UIMgr.OpenPanel<GameMgr>(new GameMgrData()
+            {
+                Model = Model,
+            });
         }
 
         // Update is called once per frame
