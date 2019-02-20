@@ -18,18 +18,24 @@ namespace QFramework.MyGame
     using UnityEngine.UI;
     
     
-    public partial class UIUsrCardsArea
+    public partial class MyGameBg
     {
         
-        public const string NAME = "UIUsrCardsArea";
+        public const string NAME = "MyGameBg";
         
-        private UIUsrCardsAreaData mPrivateData = null;
+        [SerializeField()]
+        public UIUsrCardsArea UIUsrCardsArea;
         
-        public UIUsrCardsAreaData mData
+        [SerializeField()]
+        public UICard UICard;
+        
+        private MyGameBgData mPrivateData = null;
+        
+        public MyGameBgData mData
         {
             get
             {
-                return mPrivateData ?? (mPrivateData = new UIUsrCardsAreaData());
+                return mPrivateData ?? (mPrivateData = new MyGameBgData());
             }
             set
             {
@@ -40,6 +46,8 @@ namespace QFramework.MyGame
         
         protected override void ClearUIComponents()
         {
+            UIUsrCardsArea = null;
+            UICard = null;
             mData = null;
         }
     }

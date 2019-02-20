@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFramework;
 
 namespace QFramework.MyGame
 {
@@ -13,13 +14,26 @@ namespace QFramework.MyGame
             ResMgr.Init();
             UIMgr.SetResolution(1024, 768, 0);
 
-            UIMgr.OpenPanel<UIUsrCardsArea>();
+            UIMgr.OpenPanel<MyGameBg>();
+            
         }
 
         // Update is called once per frame
         void Update()
         {
-
+            
         }
+    }
+
+    public class InitCard
+    {
+        public List<Card> Cards = new List<Card>();
+    }
+
+    public class Card
+    {
+        public string name = "万智卡";
+        public int MP_need = 0;
+        public int HP_damage = 0;
     }
 }

@@ -10,8 +10,14 @@
         <e p="App.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="UI" t="Include">
-            <e p="UIUsrCardsArea.cs" t="Include" />
-            <e p="UIUsrCardsArea.Designer.cs" t="Include" />
+            <e p="MyGameBg" t="Include">
+              <e p="UICard.cs" t="Include" />
+              <e p="UICard.Designer.cs" t="Include" />
+              <e p="UIUsrCardsArea.cs" t="Include" />
+              <e p="UIUsrCardsArea.Designer.cs" t="Include" />
+            </e>
+            <e p="MyGameBg.cs" t="Include" />
+            <e p="MyGameBg.Designer.cs" t="Include" />
           </e>
         </e>
       </e>

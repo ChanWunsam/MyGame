@@ -1,7 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4424db1-80da-40d0-b57a-7f639b2fcd15" name="Default Changelist" comment="" />
+    <list default="true" id="d4424db1-80da-40d0-b57a-7f639b2fcd15" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mygame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mygame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mygame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mygame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGame/App.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/App.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGame/App.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/Art/UIPrefab/MyGameBg.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGame/Art/UIPrefab/MyGameBg.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/Art/UIPrefab/UIUsrCardsArea.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/Art/UIPrefab/UIUsrCardsArea.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/Scripts/UI/UIUsrCardsArea.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/Scripts/UI/UIUsrCardsArea.Designer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/Scripts/UI/UIUsrCardsArea.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGame/Scripts/UI/UIUsrCardsArea.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/0.Core/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/0.Core/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/ElementCodeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/ElementCodeData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/ElementCodeData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/ElementCodeData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/MarkedObjInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/MarkedObjInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/MarkedObjInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/MarkedObjInfo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/PanelCodeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/PanelCodeData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/PanelCodeData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/PanelCodeData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/UIGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/UIGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/UIGraph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Data/UIGraph.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/ILRuntimePanelCodeTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/ILRuntimePanelCodeTemplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/ILRuntimePanelCodeTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/ILRuntimePanelCodeTemplate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIElementCodeTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIElementCodeTemplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIElementCodeTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIElementCodeTemplate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelDataTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelDataTemplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelDataTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelDataTemplate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelDesignerTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelDesignerTemplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelDesignerTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelDesignerTemplate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelTemplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Templates/UIPanelTemplate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UICodeGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UICodeGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UICodeGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UICodeGenerator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UIMarkCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UIMarkCollector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UIMarkCollector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UIMarkCollector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UISerializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UISerializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UISerializer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/UISerializer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Util.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Util.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Util.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/CodeGen/Util.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UICreateService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UICreateService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UICreateService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UICreateService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIEditorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIEditorWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIEditorWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIKitSettingData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIKitSettingData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIKitSettingData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIKitSettingData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIKitSettingView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIKitSettingView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIKitSettingView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Editor/UIKitSettingView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/QUICameraUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/QUICameraUtil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/QUICameraUtil.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/QUICameraUtil.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIPointerDownEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIPointerDownEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIPointerDownEventListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIPointerDownEventListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIPointerUpEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIPointerUpEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIPointerUpEventListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIPointerUpEventListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIRectTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIRectTransform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIRectTransform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UIRectTransform.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UISpriteAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UISpriteAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UISpriteAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Extension/UISpriteAnimation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources/UIRoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources/UIRoot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources/UIRoot.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources/UIRoot.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources/UITransitionPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources/UITransitionPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources/UITransitionPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Resources/UITransitionPanel.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIElement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIElement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIElementList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIElementList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIElementList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIElementList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIScrollPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIScrollPage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIScrollPage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIScrollPage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIScrollPageMark.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIScrollPageMark.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIScrollPageMark.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UIScrollPageMark.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UITransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UITransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UITransition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Component/UITransition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res/DefaultPanelLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res/DefaultPanelLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res/DefaultPanelLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res/DefaultPanelLoader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res/IPanelLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res/IPanelLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res/IPanelLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Res/IPanelLoader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/IMark.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/IMark.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/IMark.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/IMark.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/IPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/IPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/IPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/IPanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIMark.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIMark.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIMark.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIMark.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIPanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIStack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIStack.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/System/UIStack.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/FadeInOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/FadeInOut.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/FadeInOut.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/FadeInOut.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/FadeOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/FadeOut.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/FadeOut.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/FadeOut.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/ITransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/ITransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/ITransition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/ITransition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/UITransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/UITransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/UITransition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Transition/UITransition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI/UITransitionPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI/UITransitionPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI/UITransitionPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI/UITransitionPanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI/UITransitionPanelComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI/UITransitionPanelComponents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI/UITransitionPanelComponents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UI/UITransitionPanelComponents.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UIPanelTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UIPanelTester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UIPanelTester.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/UIPanelTester.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/CollisionTriggerListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/CollisionTriggerListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/CollisionTriggerListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/CollisionTriggerListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/UIEffectHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/UIEffectHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/UIEffectHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/UIEffectHelper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/UIEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/UIEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/UIEventListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/1.UI/Script/Util/UIEventListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/Document.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/Document.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/Document.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/Document.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/Framework.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/Framework.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/Framework.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/Framework.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/IManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/IManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/IManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/IManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMgrBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMgrBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMgrBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMgrBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMonoBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMonoBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMonoBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMonoBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsg.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsg.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsg.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsg.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsgCenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsgCenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsgCenter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsgCenter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsgSpan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsgSpan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsgSpan.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/2.ManagerOfManagers/QMsgSpan.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Document.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Document.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Document.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Document.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes/Example_CircleMask.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes/Example_CircleMask.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes/Example_CircleMask.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes/Example_CircleMask.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes/Example_RectMask.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes/Example_RectMask.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes/Example_RectMask.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scenes/Example_RectMask.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/CircleGuideCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/CircleGuideCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/CircleGuideCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/CircleGuideCtrl.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/GuideCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/GuideCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/GuideCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/GuideCtrl.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/RectGuideCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/RectGuideCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/RectGuideCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Scripts/RectGuideCtrl.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader/CircleGuideShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader/CircleGuideShader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader/CircleGuideShader.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader/CircleGuideShader.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader/RectGuideShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader/RectGuideShader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader/RectGuideShader.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/3.Guide/Shader/RectGuideShader.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/Document.md.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/Document.md.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/Document.md.html.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/Document.md.html.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/PackageVersion.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/PackageVersion.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/PackageVersion.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QFramework/Framework/2.UIKit/PackageVersion.json.meta" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,22 +175,275 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/TodoList/App.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/MyGame/App.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
               <folding>
-                <marker date="1550574619567" expanded="false" signature="6:91" ph="..." />
-                <marker date="1550574619567" expanded="true" signature="122:1366" ph="{...}" />
-                <marker date="1550574619567" expanded="true" signature="161:659" ph="{...}" />
-                <marker date="1550574619567" expanded="true" signature="303:564" ph="{...}" />
-                <marker date="1550574619567" expanded="true" signature="505:552" ph="{...}" />
-                <marker date="1550574619567" expanded="true" signature="606:653" ph="{...}" />
-                <marker date="1550574619567" expanded="true" signature="687:1153" ph="{...}" />
-                <marker date="1550574619567" expanded="true" signature="824:1032" ph="{...}" />
-                <marker date="1550574619567" expanded="true" signature="1060:1147" ph="{...}" />
-                <marker date="1550574619567" expanded="true" signature="1180:1364" ph="{...}" />
+                <marker date="1550631043578" expanded="false" signature="6:96" ph="..." />
+                <marker date="1550631043578" expanded="true" signature="125:715" ph="{...}" />
+                <marker date="1550631043578" expanded="true" signature="164:485" ph="{...}" />
+                <marker date="1550631043578" expanded="true" signature="231:380" ph="{...}" />
+                <marker date="1550631043578" expanded="true" signature="446:479" ph="{...}" />
+                <marker date="1550631043578" expanded="true" signature="512:576" ph="{...}" />
+                <marker date="1550631043578" expanded="true" signature="599:713" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+              <folding>
+                <marker date="1550631944957" expanded="true" signature="0:408" ph="/* ------------------------------------------------------------------------------ ... */" />
+                <marker date="1550631944957" expanded="true" signature="437:1783" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="450:597" ph="..." />
+                <marker date="1550631944957" expanded="true" signature="662:984" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="724:977" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="775:967" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="1044:1781" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="1136:1213" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="1288:1469" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="1544:1564" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="1614:1634" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="1684:1704" ph="{...}" />
+                <marker date="1550631944957" expanded="true" signature="1755:1775" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UIUsrCardsArea.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+              <folding>
+                <marker date="1550631945078" expanded="true" signature="0:187" ph="/* 2019.2 sysu_wuzh’s Mac mini ... */" />
+                <marker date="1550631945078" expanded="true" signature="195:295" ph="..." />
+                <marker date="1550631945078" expanded="true" signature="324:774" ph="{...}" />
+                <marker date="1550631945078" expanded="true" signature="375:772" ph="{...}" />
+                <marker date="1550631945078" expanded="true" signature="475:681" ph="{...}" />
+                <marker date="1550631945078" expanded="true" signature="528:675" ph="{...}" />
+                <marker date="1550631945078" expanded="true" signature="707:716" ph="{...}" />
+                <marker date="1550631945078" expanded="true" signature="761:769" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UICard.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+              <folding>
+                <marker date="1550633848144" expanded="true" signature="0:187" ph="/* 2019.2 sysu_wuzh’s Mac mini ... */" />
+                <marker date="1550633848144" expanded="false" signature="195:295" ph="..." />
+                <marker date="1550633848144" expanded="true" signature="391:835" ph="{...}" />
+                <marker date="1550633848144" expanded="true" signature="448:833" ph="{...}" />
+                <marker date="1550633848144" expanded="true" signature="519:728" ph="{...}" />
+                <marker date="1550633848144" expanded="true" signature="581:724" ph="/* AreaClick.OnDragAsObservable().Subscribe((e) =&gt; ... */" />
+                <marker date="1550633848144" expanded="true" signature="769:777" ph="{...}" />
+                <marker date="1550633848144" expanded="true" signature="822:830" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/QFramework/Framework/0.Core/Plugins/UniRx/UnityEngineBridge/Triggers/ObservableTriggerExtensions.Component.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding>
+                <marker date="1550574618829" expanded="false" signature="6:189" ph="..." />
+                <marker date="1550574618829" expanded="true" signature="222:24351" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="305:24349" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="320:1219" ph="ObservableAnimatorTrigger" />
+                <marker date="1550574618829" expanded="true" signature="534:767" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="963:1199" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="1229:2733" ph="ObservableCollision2DTrigger" />
+                <marker date="1550574618829" expanded="true" signature="1493:1743" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="1975:2224" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="2464:2713" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="2743:4236" ph="ObservableCollisionTrigger" />
+                <marker date="1550574618829" expanded="true" signature="3012:3256" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="3492:3735" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="3973:4216" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="4246:4745" ph="ObservableDestroyTrigger" />
+                <marker date="1550574618829" expanded="true" signature="4464:4725" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="4756:5647" ph="ObservableEnableTrigger" />
+                <marker date="1550574618829" expanded="true" signature="4974:5202" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="5398:5627" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="5657:6157" ph="ObservableFixedUpdateTrigger" />
+                <marker date="1550574618829" expanded="true" signature="5901:6137" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="6167:6640" ph="ObservableLateUpdateTrigger" />
+                <marker date="1550574618829" expanded="true" signature="6386:6620" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="6703:9873" ph="ObservableMouseTrigger" />
+                <marker date="1550574618829" expanded="true" signature="6959:7189" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="7424:7654" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="7851:8082" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="8292:8522" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="8730:8960" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="9145:9373" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="9617:9853" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="9891:11373" ph="ObservableTrigger2DTrigger" />
+                <marker date="1550574618829" expanded="true" signature="10152:10397" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="10624:10868" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="11109:11353" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="11383:12781" ph="ObservableTriggerTrigger" />
+                <marker date="1550574618829" expanded="true" signature="11613:11852" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="12063:12301" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="12523:12761" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="12791:13248" ph="ObservableUpdateTrigger" />
+                <marker date="1550574618829" expanded="true" signature="13002:13228" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="13258:14194" ph="ObservableVisibleTrigger" />
+                <marker date="1550574618829" expanded="true" signature="13500:13738" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="13938:14174" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="14287:15796" ph="ObservableTransformChangedTrigger" />
+                <marker date="1550574618829" expanded="true" signature="14539:14799" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="15031:15285" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="15520:15776" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="15806:16306" ph="ObservableCanvasGroupChangedTrigger" />
+                <marker date="1550574618829" expanded="true" signature="16034:16286" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="16316:17303" ph="ObservableRectTransformTrigger" />
+                <marker date="1550574618829" expanded="true" signature="16578:16836" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="17034:17283" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="17330:23316" ph="ObservableEventTrigger classes" />
+                <marker date="1550574618829" expanded="true" signature="17469:17710" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="17807:18040" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="18147:18397" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="18505:18757" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="18864:19114" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="19219:19465" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="19564:19801" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="19909:20161" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="20260:20497" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="20597:20833" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="20938:21184" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="21287:21529" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="21629:21865" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="21972:22225" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="22344:22618" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="22717:22954" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="23056:23296" ph="{...}" />
+                <marker date="1550574618829" expanded="false" signature="23334:24343" ph="ObservableParticleTrigger" />
+                <marker date="1550574618829" expanded="true" signature="23566:23813" ph="{...}" />
+                <marker date="1550574618829" expanded="true" signature="24076:24315" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+              <folding>
+                <marker date="1550574619576" expanded="true" signature="0:408" ph="/* ------------------------------------------------------------------------------ ... */" />
+                <marker date="1550574619576" expanded="true" signature="439:3218" ph="{...}" />
+                <marker date="1550574619576" expanded="false" signature="452:661" ph="..." />
+                <marker date="1550574619576" expanded="true" signature="789:841" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="998:1456" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="1076:1449" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="1149:1439" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="1518:3215" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="1602:1622" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="1697:2903" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="2017:2267" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="2084:2158" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="2179:2253" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="2364:2458" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="2674:2891" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="2815:2875" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="2978:2998" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="3048:3068" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="3118:3138" ph="{...}" />
+                <marker date="1550574619576" expanded="true" signature="3189:3209" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/PanelAddItem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-183">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <marker date="1550574619577" expanded="true" signature="0:182" ph="/* 2019.2 DESKTOP-ORJQHD3 ... */" />
+                <marker date="1550574619577" expanded="false" signature="190:303" ph="..." />
+                <marker date="1550574619577" expanded="true" signature="334:3659" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="369:413" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="464:3657" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="700:806" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="867:1052" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="1080:1150" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="1174:3601" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="1248:1777" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="1315:1555" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="1576:1763" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="1943:2795" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="2016:2447" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="2130:2229" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="2329:2429" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="2468:2781" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="2539:2638" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="2663:2763" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="2868:2998" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="3079:3589" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="3152:3575" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="3259:3504" ph="{...}" />
+                <marker date="1550574619577" expanded="true" signature="3646:3654" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/UIListCtrl.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+              <folding>
+                <marker date="1550574619578" expanded="true" signature="0:182" ph="/* 2019.2 DESKTOP-ORJQHD3 ... */" />
+                <marker date="1550574619578" expanded="true" signature="190:322" ph="..." />
+                <marker date="1550574619578" expanded="true" signature="353:1374" ph="{...}" />
+                <marker date="1550574619578" expanded="true" signature="400:1372" ph="{...}" />
+                <marker date="1550574619578" expanded="true" signature="427:435" ph="{...}" />
+                <marker date="1550574619578" expanded="true" signature="480:488" ph="{...}" />
+                <marker date="1550574619578" expanded="true" signature="653:987" ph="{...}" />
+                <marker date="1550574619578" expanded="true" signature="1065:1369" ph="{...}" />
+                <marker date="1550574619578" expanded="true" signature="1157:1359" ph="{...}" />
+                <marker date="1550574619578" expanded="true" signature="1256:1343" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/UITodoItem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding>
+                <marker date="1550574619579" expanded="true" signature="0:182" ph="/* 2019.2 DESKTOP-ORJQHD3 ... */" />
+                <marker date="1550574619579" expanded="false" signature="190:303" ph="..." />
+                <marker date="1550574619579" expanded="true" signature="334:1340" ph="{...}" />
+                <marker date="1550574619579" expanded="true" signature="381:1337" ph="{...}" />
+                <marker date="1550574619579" expanded="true" signature="552:1243" ph="{...}" />
+                <marker date="1550574619579" expanded="true" signature="641:709" ph="{...}" />
+                <marker date="1550574619579" expanded="true" signature="833:1013" ph="{...}" />
+                <marker date="1550574619579" expanded="true" signature="871:999" ph="{...}" />
+                <marker date="1550574619579" expanded="true" signature="1064:1231" ph="{...}" />
+                <marker date="1550574619579" expanded="true" signature="1273:1281" ph="{...}" />
+                <marker date="1550574619579" expanded="true" signature="1326:1334" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -37,7 +455,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UIUsrCardsArea.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/QFramework/Example/UIKitExample/EventExample/EventGet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UIUsrCardsArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyGame/App.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TodoList/App.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/QFramework/Framework/0.Core/Plugins/UniRx/UnityEngineBridge/Triggers/ObservableTriggerExtensions.Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UICard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/PanelAddItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/UITodoItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/UIListCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95F4B50A-137D-4022-9C58-045B696814A0/e9/e2963d8d/PointerEventData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/QFramework/Framework/0.Core/Runtime/0.Extension/UnityAPIExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/TodoList/App.cs" />
+        <option value="$PROJECT_DIR$/Assets/MyGame/App.cs" />
+        <option value="$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/UIListCtrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg.cs" />
+        <option value="$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UIUsrCardsArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UICard.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="74" />
@@ -60,7 +504,71 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="MyGame" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="MyGame" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="MyGame" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="MyGame" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+              <item name="MyGameBg" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="MyGame" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+              <item name="MyGameBg" type="1045f7f1:UnityExplorerNode" />
+              <item name="UIUsrCardsArea.cs" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="MyGame" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+              <item name="MyGameBg.cs" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="TodoList" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TodoList" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TodoList" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TodoList" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+              <item name="PanelTodoList" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
@@ -79,7 +587,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -118,12 +626,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550573582383</updated>
       <workItem from="1550573590937" duration="28000" />
-      <workItem from="1550574033251" duration="656000" />
+      <workItem from="1550574033251" duration="7139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="684000" />
+    <option name="totallyTimeSpent" value="7167000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -136,6 +644,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1559" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22346736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -145,7 +654,7 @@
       <window_info anchor="bottom" id="Unity" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -183,22 +692,545 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/TodoList/App.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="235">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
-            <marker date="1550574619567" expanded="false" signature="6:91" ph="..." />
-            <marker date="1550574619567" expanded="true" signature="122:1366" ph="{...}" />
-            <marker date="1550574619567" expanded="true" signature="161:659" ph="{...}" />
-            <marker date="1550574619567" expanded="true" signature="303:564" ph="{...}" />
-            <marker date="1550574619567" expanded="true" signature="505:552" ph="{...}" />
-            <marker date="1550574619567" expanded="true" signature="606:653" ph="{...}" />
-            <marker date="1550574619567" expanded="true" signature="687:1153" ph="{...}" />
-            <marker date="1550574619567" expanded="true" signature="824:1032" ph="{...}" />
-            <marker date="1550574619567" expanded="true" signature="1060:1147" ph="{...}" />
-            <marker date="1550574619567" expanded="true" signature="1180:1364" ph="{...}" />
+            <marker date="1550575269422" expanded="false" signature="6:91" ph="..." />
+            <marker date="1550575269422" expanded="true" signature="122:1366" ph="{...}" />
+            <marker date="1550575269422" expanded="true" signature="161:659" ph="{...}" />
+            <marker date="1550575269422" expanded="true" signature="303:564" ph="{...}" />
+            <marker date="1550575269422" expanded="true" signature="505:552" ph="{...}" />
+            <marker date="1550575269422" expanded="true" signature="606:653" ph="{...}" />
+            <marker date="1550575269422" expanded="true" signature="687:1153" ph="{...}" />
+            <marker date="1550575269422" expanded="true" signature="824:1032" ph="{...}" />
+            <marker date="1550575269422" expanded="true" signature="1060:1147" ph="{...}" />
+            <marker date="1550575269422" expanded="true" signature="1180:1364" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/UITodoItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <marker date="1550574619579" expanded="true" signature="0:182" ph="/* 2019.2 DESKTOP-ORJQHD3 ... */" />
+            <marker date="1550574619579" expanded="false" signature="190:303" ph="..." />
+            <marker date="1550574619579" expanded="true" signature="334:1340" ph="{...}" />
+            <marker date="1550574619579" expanded="true" signature="381:1337" ph="{...}" />
+            <marker date="1550574619579" expanded="true" signature="552:1243" ph="{...}" />
+            <marker date="1550574619579" expanded="true" signature="641:709" ph="{...}" />
+            <marker date="1550574619579" expanded="true" signature="833:1013" ph="{...}" />
+            <marker date="1550574619579" expanded="true" signature="871:999" ph="{...}" />
+            <marker date="1550574619579" expanded="true" signature="1064:1231" ph="{...}" />
+            <marker date="1550574619579" expanded="true" signature="1273:1281" ph="{...}" />
+            <marker date="1550574619579" expanded="true" signature="1326:1334" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UIUsrCardsArea.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1550632464110" expanded="true" signature="0:187" ph="/* 2019.2 sysu_wuzh’s Mac mini ... */" />
+            <marker date="1550632464110" expanded="false" signature="195:247" ph="..." />
+            <marker date="1550632464110" expanded="true" signature="276:509" ph="{...}" />
+            <marker date="1550632464110" expanded="true" signature="315:507" ph="{...}" />
+            <marker date="1550632464110" expanded="true" signature="392:421" ph="{...}" />
+            <marker date="1550632464110" expanded="true" signature="461:504" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1550632464108" expanded="true" signature="0:408" ph="/* ------------------------------------------------------------------------------ ... */" />
+            <marker date="1550632464108" expanded="true" signature="437:1385" ph="{...}" />
+            <marker date="1550632464108" expanded="false" signature="450:597" ph="..." />
+            <marker date="1550632464108" expanded="true" signature="641:1383" ph="{...}" />
+            <marker date="1550632464108" expanded="true" signature="953:1208" ph="{...}" />
+            <marker date="1550632464108" expanded="true" signature="979:1083" ph="{...}" />
+            <marker date="1550632464108" expanded="true" signature="1099:1198" ph="{...}" />
+            <marker date="1550632464108" expanded="true" signature="1269:1377" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+          <folding>
+            <marker date="1550574619576" expanded="true" signature="0:408" ph="/* ------------------------------------------------------------------------------ ... */" />
+            <marker date="1550574619576" expanded="true" signature="439:3218" ph="{...}" />
+            <marker date="1550574619576" expanded="false" signature="452:661" ph="..." />
+            <marker date="1550574619576" expanded="true" signature="789:841" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="998:1456" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="1076:1449" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="1149:1439" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="1518:3215" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="1602:1622" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="1697:2903" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="2017:2267" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="2084:2158" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="2179:2253" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="2364:2458" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="2674:2891" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="2815:2875" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="2978:2998" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="3048:3068" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="3118:3138" ph="{...}" />
+            <marker date="1550574619576" expanded="true" signature="3189:3209" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/UIListCtrl.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <marker date="1550574619578" expanded="true" signature="0:182" ph="/* 2019.2 DESKTOP-ORJQHD3 ... */" />
+            <marker date="1550574619578" expanded="true" signature="190:322" ph="..." />
+            <marker date="1550574619578" expanded="true" signature="353:1374" ph="{...}" />
+            <marker date="1550574619578" expanded="true" signature="400:1372" ph="{...}" />
+            <marker date="1550574619578" expanded="true" signature="427:435" ph="{...}" />
+            <marker date="1550574619578" expanded="true" signature="480:488" ph="{...}" />
+            <marker date="1550574619578" expanded="true" signature="653:987" ph="{...}" />
+            <marker date="1550574619578" expanded="true" signature="1065:1369" ph="{...}" />
+            <marker date="1550574619578" expanded="true" signature="1157:1359" ph="{...}" />
+            <marker date="1550574619578" expanded="true" signature="1256:1343" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/QFramework/Framework/0.Core/Runtime/0.Extension/UnityAPIExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="358" column="24" selection-start-line="358" selection-start-column="24" selection-end-line="358" selection-end-column="24" />
+          <folding>
+            <marker date="1550572299545" expanded="true" signature="0:1370" ph="/* Copyright (c) 2017 liangxie ... */" />
+            <marker date="1550572299545" expanded="true" signature="1427:38930" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="1440:1565" ph="..." />
+            <marker date="1550572299545" expanded="true" signature="1609:2266" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="1652:1912" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="1989:2085" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="2163:2260" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="2307:3194" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="2350:2530" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="2608:3188" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="3234:3982" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="3277:3384" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="3394:3570" ph="/// ##C5563CFF -&gt; 197.0f / 255,86.0f / 255,60.0f / 255 ... " />
+            <marker date="1550572299545" expanded="true" signature="3640:3836" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="3846:3927" ph="/// unity's color always new a color ... " />
+            <marker date="1550572299545" expanded="true" signature="3988:4068" ph="/// GameObject's Util/Static This Extension ... " />
+            <marker date="1550572299545" expanded="true" signature="4112:9252" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="4155:5910" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="5920:6283" ph="CEGO001 Show" />
+            <marker date="1550572299545" expanded="true" signature="6004:6089" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="6164:6263" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="6293:6657" ph="CEGO002 Hide" />
+            <marker date="1550572299545" expanded="true" signature="6377:6463" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="6538:6637" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="6667:6877" ph="CEGO003 DestroyGameObj" />
+            <marker date="1550572299545" expanded="true" signature="6785:6857" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="6887:7218" ph="CEGO004 DestroyGameObjGracefully" />
+            <marker date="1550572299545" expanded="true" signature="7025:7198" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="7094:7188" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="7228:7848" ph="CEGO005 DestroyGameObjGracefully" />
+            <marker date="1550572299545" expanded="true" signature="7376:7497" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="7615:7828" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="7684:7783" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="7858:8671" ph="CEGO006 Layer" />
+            <marker date="1550572299545" expanded="true" signature="7955:8038" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="8125:8231" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="8314:8424" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="8518:8651" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="8681:9246" ph="CEGO007 Component" />
+            <marker date="1550572299545" expanded="true" signature="8803:8967" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="9060:9226" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="9294:9949" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="9337:9690" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="9780:9943" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="9989:10408" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="10032:10225" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="10305:10402" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="10451:10644" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="10539:10638" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="10685:13609" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="10728:11432" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="11443:11631" ph="CEUO001 Instantiate" />
+            <marker date="1550572299545" expanded="true" signature="11543:11611" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="11641:11848" ph="CEUO002 Instantiate" />
+            <marker date="1550572299545" expanded="true" signature="11747:11828" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="11858:12265" ph="CEUO003 Destroy Self" />
+            <marker date="1550572299545" expanded="true" signature="11962:12019" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="12102:12245" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="12137:12206" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="12275:12789" ph="CEUO004 Destroy Self AfterDelay" />
+            <marker date="1550572299545" expanded="true" signature="12416:12513" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="12619:12769" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="12654:12730" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="12799:13049" ph="CEUO005 Apply Self To" />
+            <marker date="1550572299545" expanded="true" signature="12931:13029" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="13059:13286" ph="CEUO006 DontDestroyOnLoad" />
+            <marker date="1550572299545" expanded="true" signature="13171:13266" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="13355:13408" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="13518:13603" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="13657:15314" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="13770:13905" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="14005:14213" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="14313:14521" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="14622:14815" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="14918:15112" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="15190:15308" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="15359:15968" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="15451:15554" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="15642:15746" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="15839:15962" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="16009:16226" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="16128:16220" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="16294:16356" ph="/// Transform's Extension ... " />
+            <marker date="1550572299545" expanded="true" signature="16399:35408" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="16442:18608" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="18619:18682" ph="/// 缓存的一些变量,免得每次声明 ... " />
+            <marker date="1550572299545" expanded="false" signature="18811:19568" ph="CETR001 Parent" />
+            <marker date="1550572299545" expanded="true" signature="18937:19098" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="19108:19356" ph="/// 设置成为顶端 Transform ... " />
+            <marker date="1550572299545" expanded="true" signature="19441:19548" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="19578:19966" ph="CETR002 LocalIdentity" />
+            <marker date="1550572299545" expanded="true" signature="19691:19946" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="19976:22117" ph="CETR003 LocalPosition" />
+            <marker date="1550572299545" expanded="true" signature="20107:20223" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="20316:20394" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="20507:20635" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="20737:20975" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="21069:21278" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="21372:21581" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="21675:21884" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="21977:22097" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="22127:22800" ph="CETR004 LocalRotation" />
+            <marker date="1550572299545" expanded="true" signature="22252:22330" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="22440:22561" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="22653:22780" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="22810:25174" ph="CETR005 LocalScale" />
+            <marker date="1550572299545" expanded="true" signature="22932:23042" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="23132:23207" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="23299:23421" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="23529:23775" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="23874:24094" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="24185:24379" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="24470:24664" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="24755:24949" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="25038:25154" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="25184:25552" ph="CETR006 Identity" />
+            <marker date="1550572299545" expanded="true" signature="25287:25532" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="25562:28448" ph="CETR007 Position" />
+            <marker date="1550572299545" expanded="true" signature="25683:25794" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="25882:25955" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="26061:26184" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="26281:26489" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="26576:26691" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="26780:26964" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="27072:27270" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="27359:27543" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="27651:27849" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="27938:28122" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="28230:28428" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="28458:29086" ph="CETR008 Rotation" />
+            <marker date="1550572299545" expanded="true" signature="28569:28691" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="28791:28902" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="28993:29066" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="29096:29827" ph="CETR009 WorldScale/LossyScale/GlobalScale/Scale" />
+            <marker date="1550572299545" expanded="true" signature="29242:29317" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="29402:29477" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="29567:29642" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="29732:29807" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="29837:30605" ph="CETR010 Destroy All Child" />
+            <marker date="1550572299545" expanded="true" signature="29956:30234" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="30081:30189" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="30313:30585" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="30436:30542" ph="{...}" />
+            <marker date="1550572299545" expanded="false" signature="30615:31262" ph="CETR011 Sibling Index" />
+            <marker date="1550572299545" expanded="true" signature="30728:30838" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="30923:31034" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="31128:31242" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="31346:31425" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="31517:31918" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="31716:31882" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="32030:32158" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="32270:32387" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="32480:32734" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="32744:32892" ph="/// 递归遍历子物体，并调用函数 ... " />
+            <marker date="1550572299545" expanded="true" signature="32986:33165" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="33078:33155" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="33175:33428" ph="/// 递归遍历查找指定的名字的子物体 ... " />
+            <marker date="1550572299545" expanded="true" signature="33591:34115" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="33663:33777" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="33830:34079" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="33993:34065" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="34125:34322" ph="/// 递归遍历查找相应条件的子物体 ... " />
+            <marker date="1550572299545" expanded="true" signature="34431:34915" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="34478:34590" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="34643:34879" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="34793:34865" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="34979:35402" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="35099:35392" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="35204:35279" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="35300:35378" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="35454:38928" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="35497:35843" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="35853:36004" ph="/// Call action ... " />
+            <marker date="1550572299545" expanded="true" signature="36077:36247" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="36123:36210" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="36257:36440" ph="/// Call action ... " />
+            <marker date="1550572299545" expanded="true" signature="36524:36695" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="36570:36658" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="36705:36856" ph="/// Call action ... " />
+            <marker date="1550572299545" expanded="true" signature="36951:37125" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="36997:37088" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="37135:37316" ph="/// 获得随机列表中元素 ... " />
+            <marker date="1550572299545" expanded="true" signature="37376:37466" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="37477:37609" ph="/// 根据权值来获取索引 ... " />
+            <marker date="1550572299545" expanded="true" signature="37677:38280" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="37754:37812" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="37958:38214" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="38095:38161" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="38290:38484" ph="/// 根据权值获取值，Key为值，Value为权值 ... " />
+            <marker date="1550572299545" expanded="true" signature="38566:38922" ph="{...}" />
+            <marker date="1550572299545" expanded="true" signature="38706:38810" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MyGame/App.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <marker date="1550631043578" expanded="false" signature="6:96" ph="..." />
+            <marker date="1550631043578" expanded="true" signature="125:715" ph="{...}" />
+            <marker date="1550631043578" expanded="true" signature="164:485" ph="{...}" />
+            <marker date="1550631043578" expanded="true" signature="231:380" ph="{...}" />
+            <marker date="1550631043578" expanded="true" signature="446:479" ph="{...}" />
+            <marker date="1550631043578" expanded="true" signature="512:576" ph="{...}" />
+            <marker date="1550631043578" expanded="true" signature="599:713" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UIUsrCardsArea.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <marker date="1550631945078" expanded="true" signature="0:187" ph="/* 2019.2 sysu_wuzh’s Mac mini ... */" />
+            <marker date="1550631945078" expanded="true" signature="195:295" ph="..." />
+            <marker date="1550631945078" expanded="true" signature="324:774" ph="{...}" />
+            <marker date="1550631945078" expanded="true" signature="375:772" ph="{...}" />
+            <marker date="1550631945078" expanded="true" signature="475:681" ph="{...}" />
+            <marker date="1550631945078" expanded="true" signature="528:675" ph="{...}" />
+            <marker date="1550631945078" expanded="true" signature="707:716" ph="{...}" />
+            <marker date="1550631945078" expanded="true" signature="761:769" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95F4B50A-137D-4022-9C58-045B696814A0/e9/e2963d8d/PointerEventData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TodoList/Scripts/UI/PanelTodoList/PanelAddItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <marker date="1550574619577" expanded="true" signature="0:182" ph="/* 2019.2 DESKTOP-ORJQHD3 ... */" />
+            <marker date="1550574619577" expanded="false" signature="190:303" ph="..." />
+            <marker date="1550574619577" expanded="true" signature="334:3659" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="369:413" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="464:3657" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="700:806" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="867:1052" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="1080:1150" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="1174:3601" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="1248:1777" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="1315:1555" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="1576:1763" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="1943:2795" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="2016:2447" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="2130:2229" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="2329:2429" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="2468:2781" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="2539:2638" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="2663:2763" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="2868:2998" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="3079:3589" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="3152:3575" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="3259:3504" ph="{...}" />
+            <marker date="1550574619577" expanded="true" signature="3646:3654" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/QFramework/Example/UIKitExample/EventExample/EventGet.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1550574614015" expanded="true" signature="0:1386" ph="/* Copyright (c) 2018.3 布鞋 827922094@qq.com ... */" />
+            <marker date="1550574614015" expanded="true" signature="1428:1766" ph="{...}" />
+            <marker date="1550574614015" expanded="true" signature="1453:1469" ph="{...}" />
+            <marker date="1550574614015" expanded="true" signature="1510:1764" ph="{...}" />
+            <marker date="1550574614015" expanded="true" signature="1530:1597" ph="{...}" />
+            <marker date="1550574614015" expanded="true" signature="1644:1761" ph="{...}" />
+            <marker date="1550574614015" expanded="true" signature="1664:1757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/QFramework/Framework/0.Core/Plugins/UniRx/UnityEngineBridge/Triggers/ObservableTriggerExtensions.Component.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <marker date="1550574618829" expanded="false" signature="6:189" ph="..." />
+            <marker date="1550574618829" expanded="true" signature="222:24351" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="305:24349" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="320:1219" ph="ObservableAnimatorTrigger" />
+            <marker date="1550574618829" expanded="true" signature="534:767" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="963:1199" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="1229:2733" ph="ObservableCollision2DTrigger" />
+            <marker date="1550574618829" expanded="true" signature="1493:1743" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="1975:2224" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="2464:2713" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="2743:4236" ph="ObservableCollisionTrigger" />
+            <marker date="1550574618829" expanded="true" signature="3012:3256" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="3492:3735" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="3973:4216" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="4246:4745" ph="ObservableDestroyTrigger" />
+            <marker date="1550574618829" expanded="true" signature="4464:4725" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="4756:5647" ph="ObservableEnableTrigger" />
+            <marker date="1550574618829" expanded="true" signature="4974:5202" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="5398:5627" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="5657:6157" ph="ObservableFixedUpdateTrigger" />
+            <marker date="1550574618829" expanded="true" signature="5901:6137" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="6167:6640" ph="ObservableLateUpdateTrigger" />
+            <marker date="1550574618829" expanded="true" signature="6386:6620" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="6703:9873" ph="ObservableMouseTrigger" />
+            <marker date="1550574618829" expanded="true" signature="6959:7189" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="7424:7654" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="7851:8082" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="8292:8522" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="8730:8960" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="9145:9373" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="9617:9853" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="9891:11373" ph="ObservableTrigger2DTrigger" />
+            <marker date="1550574618829" expanded="true" signature="10152:10397" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="10624:10868" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="11109:11353" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="11383:12781" ph="ObservableTriggerTrigger" />
+            <marker date="1550574618829" expanded="true" signature="11613:11852" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="12063:12301" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="12523:12761" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="12791:13248" ph="ObservableUpdateTrigger" />
+            <marker date="1550574618829" expanded="true" signature="13002:13228" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="13258:14194" ph="ObservableVisibleTrigger" />
+            <marker date="1550574618829" expanded="true" signature="13500:13738" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="13938:14174" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="14287:15796" ph="ObservableTransformChangedTrigger" />
+            <marker date="1550574618829" expanded="true" signature="14539:14799" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="15031:15285" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="15520:15776" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="15806:16306" ph="ObservableCanvasGroupChangedTrigger" />
+            <marker date="1550574618829" expanded="true" signature="16034:16286" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="16316:17303" ph="ObservableRectTransformTrigger" />
+            <marker date="1550574618829" expanded="true" signature="16578:16836" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="17034:17283" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="17330:23316" ph="ObservableEventTrigger classes" />
+            <marker date="1550574618829" expanded="true" signature="17469:17710" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="17807:18040" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="18147:18397" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="18505:18757" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="18864:19114" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="19219:19465" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="19564:19801" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="19909:20161" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="20260:20497" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="20597:20833" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="20938:21184" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="21287:21529" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="21629:21865" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="21972:22225" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="22344:22618" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="22717:22954" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="23056:23296" ph="{...}" />
+            <marker date="1550574618829" expanded="false" signature="23334:24343" ph="ObservableParticleTrigger" />
+            <marker date="1550574618829" expanded="true" signature="23566:23813" ph="{...}" />
+            <marker date="1550574618829" expanded="true" signature="24076:24315" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+          <folding>
+            <marker date="1550631944957" expanded="true" signature="0:408" ph="/* ------------------------------------------------------------------------------ ... */" />
+            <marker date="1550631944957" expanded="true" signature="437:1783" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="450:597" ph="..." />
+            <marker date="1550631944957" expanded="true" signature="662:984" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="724:977" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="775:967" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="1044:1781" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="1136:1213" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="1288:1469" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="1544:1564" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="1614:1634" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="1684:1704" ph="{...}" />
+            <marker date="1550631944957" expanded="true" signature="1755:1775" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MyGame/Scripts/UI/MyGameBg/UICard.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <marker date="1550633848144" expanded="true" signature="0:187" ph="/* 2019.2 sysu_wuzh’s Mac mini ... */" />
+            <marker date="1550633848144" expanded="false" signature="195:295" ph="..." />
+            <marker date="1550633848144" expanded="true" signature="391:835" ph="{...}" />
+            <marker date="1550633848144" expanded="true" signature="448:833" ph="{...}" />
+            <marker date="1550633848144" expanded="true" signature="519:728" ph="{...}" />
+            <marker date="1550633848144" expanded="true" signature="581:724" ph="/* AreaClick.OnDragAsObservable().Subscribe((e) =&gt; ... */" />
+            <marker date="1550633848144" expanded="true" signature="769:777" ph="{...}" />
+            <marker date="1550633848144" expanded="true" signature="822:830" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
