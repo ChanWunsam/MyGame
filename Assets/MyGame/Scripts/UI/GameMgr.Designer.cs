@@ -24,10 +24,13 @@ namespace QFramework.MyGame
         public const string NAME = "GameMgr";
         
         [SerializeField()]
-        public UIUsrCardsArea UIUsrCardsArea;
-        
-        [SerializeField()]
         public UICard UICard;
+
+        [SerializeField()]
+        public UIUsrCardsArea UIUsrCardsArea;
+
+        [SerializeField()]
+        public UIUsrPopCardsArea UIUsrPopCardsArea;
         
         private GameMgrData mPrivateData = null;
         
@@ -46,8 +49,9 @@ namespace QFramework.MyGame
         
         protected override void ClearUIComponents()
         {
-            UIUsrCardsArea = null;
             UICard = null;
+            UIUsrCardsArea = null;
+            UIUsrPopCardsArea = null;
             mData = null;
         }
     }

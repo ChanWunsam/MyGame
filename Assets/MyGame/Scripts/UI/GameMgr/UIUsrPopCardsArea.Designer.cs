@@ -8,15 +8,18 @@ using QFramework;
 
 namespace QFramework.MyGame
 {
-	public partial class UIUsrCardsArea
+	public partial class UIUsrPopCardsArea
 	{
-		public void Clear()
+        [SerializeField] public Button AreaClick;
+
+        public void Clear()
 		{
-		}
+            AreaClick = null;
+        }
 
 		public override string ComponentName
 		{
-			get { return "UIUsrCardsArea";}
+			get { return "UIUsrPopCardsArea";}
 		}
 	}
 }

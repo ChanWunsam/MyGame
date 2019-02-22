@@ -16,19 +16,88 @@ namespace QFramework.MyGame
     using System.Linq;
     using UnityEngine;
     using UnityEngine.UI;
+    using UniRx;
+    using UniRx.Triggers;
     
+    //============================================================
+
+    public enum GameMgrEvent
+    {
+        Start = QMgrID.UI,
+        OnUsrCardPlus,
+        OnUsrCardMinus,
+        OnUsrCardDrag,
+        OnPopCardPlus,
+        OnPopCardMinus,
+        End,
+    }
+
+    public class OnUsrCardsPlusMsg : QMsg
+    {
+        public Card Data;
+
+        public OnUsrCardsPlusMsg(Card data) : base((int)GameMgrEvent.OnUsrCardPlus)
+        {
+            Data = data;
+        }
+    }
+
+    public class OnUsrCardsMinusMsg : QMsg
+    {
+        public Card Data;
+
+        public OnUsrCardsMinusMsg(Card data) : base((int)GameMgrEvent.OnUsrCardMinus)
+        {
+            Data = data;
+        }
+    }
+
+    public class OnUsrCardDragMsg : QMsg
+    {
+        public Card Data;
+
+        public OnUsrCardDragMsg(Card data) : base((int)GameMgrEvent.OnUsrCardDrag)
+        {
+            Data = data;
+        }
+    }
+
+    public class OnPopCardsPlusMsg : QMsg
+    {
+        public Card Data;
+
+        public OnPopCardsPlusMsg(Card data) : base((int)GameMgrEvent.OnPopCardPlus)
+        {
+            Data = data;
+        }
+    }
+
+    public class OnPopCardsMinusMsg : QMsg
+    {
+        public Card Data;
+
+        public OnPopCardsMinusMsg(Card data) : base((int)GameMgrEvent.OnPopCardMinus)
+        {
+            Data = data;
+        }
+    }
+
+    //============================================================
     
+
     public class GameMgrData : QFramework.UIPanelData
     {
-        public InitCard Model = new InitCard()
+        public CardList HandCardModel = new CardList()
         {
-            Cards = new List<Card>()
+            Data = new List<Card>()
             {
-                new Card() {HP_damage = 10, MP_need = 10},
-                new Card() {HP_damage = 10, MP_need = 10},
-                new Card() {HP_damage = 10, MP_need = 10},
+                new Card() {HP_damage = 20, MP_need = 10},
+                new Card() {HP_damage = 30, MP_need = 10},
+                new Card() {HP_damage = 40, MP_need = 10},
             }
         };
+
+        public CardList PopCardModel = new CardList();
     }
     
     public partial class GameMgr : QFramework.UIPanel
@@ -36,7 +105,45 @@ namespace QFramework.MyGame
         
         protected override void ProcessMsg(int eventId, QFramework.QMsg msg)
         {
-            throw new System.NotImplementedException ();
+            if (eventId == (int)GameMgrEvent.OnUsrCardPlus)
+            {
+                var plusMsg = msg as OnUsrCardsPlusMsg;
+                //mData.HandCardModel.Data.Add(plusMsg.Data);
+                UIUsrCardsArea.OnUsrCardNumPlus(UICard, plusMsg.Data);
+            }
+            else if (eventId == (int)GameMgrEvent.OnUsrCardMinus)
+            {
+                var minusMsg = msg as OnUsrCardsMinusMsg;
+                //mData.HandCardModel.Data.Remove(minusMsg.Data);
+                UIUsrCardsArea.OnUsrCardNumMinus(minusMsg.Data);
+            }
+            else if (eventId == (int)GameMgrEvent.OnUsrCardDrag)    // 具有特殊地位，需优化
+            {
+                var dragMsg = msg as OnUsrCardDragMsg;
+                // todo test
+                SendMsg(new OnUsrCardsMinusMsg(dragMsg.Data));      // 容易产生大量GC操作，需用pool改善
+                if (UIUsrPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
+                {
+                    SendMsg(new OnPopCardsPlusMsg(dragMsg.Data));
+                    UIUsrPopCardsArea.State = PopCardsAreaState.Normal;
+                }
+                else
+                {
+                    SendMsg(new OnUsrCardsPlusMsg(dragMsg.Data));
+                }
+            }
+            else if (eventId == (int)GameMgrEvent.OnPopCardPlus)
+            {
+                var plusMsg = msg as OnPopCardsPlusMsg;
+                //mData.PopCardModel.Data.Add(plusMsg.Data);
+                UIUsrPopCardsArea.OnPopCardNumPlus(UICard, plusMsg.Data);
+            }
+            else if (eventId == (int)GameMgrEvent.OnUsrCardMinus)
+            {
+                var minusMsg = msg as OnUsrCardsMinusMsg;
+                //mData.PopCardModel.Data.Remove(minusMsg.Data);
+                UIUsrPopCardsArea.OnPopCardNumMinus(minusMsg.Data);
+            }
         }
         
         protected override void OnInit(QFramework.IUIData uiData)
@@ -44,11 +151,18 @@ namespace QFramework.MyGame
             mData = uiData as GameMgrData ?? new GameMgrData();
             // please add init code here
 
-            UIUsrCardsArea.Init(UICard, mData.Model);
+            UIUsrCardsArea.Init(UICard, mData.HandCardModel);
+
+            RegisterEvent(GameMgrEvent.OnUsrCardPlus);
+            RegisterEvent(GameMgrEvent.OnUsrCardMinus);
+            RegisterEvent(GameMgrEvent.OnUsrCardDrag);
+            RegisterEvent(GameMgrEvent.OnPopCardPlus);
+            RegisterEvent(GameMgrEvent.OnPopCardMinus);
         }
         
         protected override void OnOpen(QFramework.IUIData uiData)
         {
+            // todo
         }
         
         protected override void OnShow()
@@ -61,6 +175,7 @@ namespace QFramework.MyGame
         
         protected override void OnClose()
         {
+            this.ClearUIComponents();
         }
     }
 }

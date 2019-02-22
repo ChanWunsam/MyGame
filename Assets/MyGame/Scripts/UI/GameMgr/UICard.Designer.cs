@@ -1,5 +1,5 @@
 ﻿/****************************************************************************
- * 2019.2 sysu_wuzh’s Mac mini
+ * 2019.2 DESKTOP-UFLMNH7
  ****************************************************************************/
 
 using UnityEngine;
@@ -13,12 +13,14 @@ namespace QFramework.MyGame
 		[SerializeField] public Text MP_need;
 		[SerializeField] public Text HP_damage;
 		[SerializeField] public Button AreaClick;
+		[SerializeField] public Image UICardShow;
 
 		public void Clear()
 		{
 			MP_need = null;
 			HP_damage = null;
 			AreaClick = null;
+			UICardShow = null;
 		}
 
 		public override string ComponentName

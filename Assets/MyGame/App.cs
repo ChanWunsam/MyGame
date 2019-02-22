@@ -7,9 +7,9 @@ namespace QFramework.MyGame
 {
     public class App : MonoBehaviour
     {
-        InitCard Model = new InitCard()
+        CardList Model = new CardList()
         { 
-            Cards = new List<Card>()
+            Data = new List<Card>()
             {
                 new Card() {HP_damage = 10, MP_need = 10},
                 new Card() {HP_damage = 10, MP_need = 10},
@@ -26,7 +26,7 @@ namespace QFramework.MyGame
 
             UIMgr.OpenPanel<GameMgr>(new GameMgrData()
             {
-                Model = Model,
+                HandCardModel = Model,
             });
         }
 
@@ -37,9 +37,9 @@ namespace QFramework.MyGame
         }
     }
 
-    public class InitCard
+    public class CardList
     {
-        public List<Card> Cards = new List<Card>();
+        public List<Card> Data = new List<Card>();
     }
 
     public class Card
