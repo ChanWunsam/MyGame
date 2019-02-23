@@ -31,6 +31,11 @@ namespace QFramework.MyGame
             }
         }
 
+        private void Awake()
+        {
+            
+        }
+
         public void OnUsrCardNumPlus(UICard CardPrefab, Card data)
         {
             int index = 0;
@@ -40,11 +45,12 @@ namespace QFramework.MyGame
             {
                 if (FromDataToCardDict.TryGetValue(Model.Data[index], out card))
                 {
-                    card.LocalPositionX(left_point + distance * (index + 1));
+                    card.LocalIdentity()
+                        .LocalPositionX(left_point + distance * (index + 1));
                 }
                 else
                 {
-                    Debug.Log("找不到key");
+                    Log.E("找不到key");
                 }
             }
             Model.Data.Add(data);
@@ -60,7 +66,8 @@ namespace QFramework.MyGame
             distance = (right_point - left_point) / (Model.Data.Count + 1);
             for (int i = 0; i < Model.Data.Count; i++)
             {
-                FromDataToCardDict[Model.Data[i]].LocalPositionX(left_point + distance * (i + 1));
+                FromDataToCardDict[Model.Data[i]].LocalIdentity()
+                        .LocalPositionX(left_point + distance * (i + 1));
             }
         }
 
@@ -72,15 +79,28 @@ namespace QFramework.MyGame
                     .LocalIdentity()
                     .LocalPositionX(left_point + distance * (index + 1))
                     .ApplySelfTo(self => FromDataToCardDict.Add(data, self))
-                    .ApplySelfTo(self => self.Init(data, UICardState.InHand))
+                    .ApplySelfTo(self => self.Init(data, UICardState.ActivateCard))
                     .Show();
         }
 
-        private void Awake()
-		{
+        public void OnActivateCards()
+        {
+            FromDataToCardDict.Values.ForEach((card) =>
+            {
+                card.State = UICardState.ActivateCard;
+            });
+            Log.I("Activate Usr Card");
+        }
 
-		}
-
+        public void OnDeactivateCards()
+        {
+            FromDataToCardDict.Values.ForEach((card) =>
+            {
+                card.State = UICardState.DeactivateCard;
+            });
+            Log.I("Deactivate Usr Card");
+        }
+        
 		protected override void OnBeforeDestroy()
 		{
             this.DestroyAllChild();

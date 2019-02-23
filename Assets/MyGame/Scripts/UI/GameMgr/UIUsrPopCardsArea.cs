@@ -26,54 +26,56 @@ namespace QFramework.MyGame
         public int right_point = 250;
         private int distance;
 
-        Dictionary<Card, UICard> FromDataToCardDict = new Dictionary<Card, UICard>();
+        public PopCardsAreaState State;
 
-        public void Init(UICard CardPrefab, CardList model)
-        {
-            Model = model;
-            distance = (right_point - left_point) / (Model.Data.Count + 1);
-            for (int i = 0; i < model.Data.Count; i++)
+        Dictionary<Card, UICard> FromDataToCardDict = new Dictionary<Card, UICard>();
+      
+        private void Awake()
+		{
+            State = PopCardsAreaState.Normal;
+
+            // todo éœ€ä¼˜åŒ–ï¼Œç¬¬ä¸€ä¸‹ä¸èƒ½å“åº”
+            AreaClick.OnPointerEnterAsObservable().Subscribe((e) =>
             {
-                Card data = model.Data[i];
-                CreateCard(CardPrefab, data, i);
-            }
+                State = PopCardsAreaState.OnEnterTrigger;
+            });
+
         }
 
         public void OnPopCardNumPlus(UICard CardPrefab, Card data)
         {
             int index = 0;
             UICard card = null;
-            distance = (right_point - left_point) / (Model.Data.Count + 2); // Ô¤ÁôÒ»¸öÎ»ÖÃ¸øĞÂCard
+            distance = (right_point - left_point) / (Model.Data.Count + 2); // é¢„ç•™ä¸€ä¸ªä½ç½®ç»™æ–°Card
             for (; index < Model.Data.Count; index++)
             {
                 if (FromDataToCardDict.TryGetValue(Model.Data[index], out card))
                 {
-                    card.LocalPositionX(left_point + distance * (index + 1));
+                    card.LocalIdentity()
+                        .LocalPositionX(left_point + distance * (index + 1));
                 }
                 else
                 {
-                    Debug.Log("ÕÒ²»µ½key");
+                    Log.E("æ‰¾ä¸åˆ°key");
                 }
             }
             Model.Data.Add(data);
             CreateCard(CardPrefab, data, index);
-            AreaClick.transform.SetSiblingIndex(this.transform.childCount - 1); // ½«AreaClickÉèÖÃÎª×ÓÎïÌåË³Ğò×îºó
+            AreaClick.transform.SetSiblingIndex(this.transform.childCount - 1); // å°†AreaClickè®¾ç½®ä¸ºå­ç‰©ä½“é¡ºåºæœ€å
         }
 
-        public void OnPopCardNumMinus(Card data)
+        public void OnPopCardsClear()
         {
-            UICard card = FromDataToCardDict[data];
-            FromDataToCardDict.Remove(data);
-            card.DestroyGameObj();
-            Model.Data.Remove(data);
-            distance = (right_point - left_point) / (Model.Data.Count + 1);
-            for (int i = 0; i < Model.Data.Count - 1; i++)
+            FromDataToCardDict.Values.ForEach((card) =>
             {
-                FromDataToCardDict[Model.Data[i]].LocalPositionX(left_point + distance * (i + 1));
-            }
+                card.DestroyGameObj();
+            });
+            FromDataToCardDict.Clear();
+            Model.Data.Clear();
+            Log.I("Clear All Pop Card");
         }
 
-        // index ´Ó0¿ªÊ¼
+        // index ä»0å¼€å§‹
         void CreateCard(UICard CardPrefab, Card data, int index)
         {
             CardPrefab.Instantiate()
@@ -81,24 +83,10 @@ namespace QFramework.MyGame
                     .LocalIdentity()
                     .LocalPositionX(left_point + distance * (index + 1))
                     .ApplySelfTo(self => FromDataToCardDict.Add(data, self))
-                    .ApplySelfTo(self => self.Init(data, UICardState.InPop))
+                    .ApplySelfTo(self => self.Init(data, UICardState.DeactivateCard))
                     .Show();
         }
 
-
-        public PopCardsAreaState State;
-
-        private void Awake()
-		{
-            State = PopCardsAreaState.Normal;
-
-            // todo ĞèÓÅ»¯£¬µÚÒ»ÏÂ²»ÄÜÏìÓ¦
-            AreaClick.OnPointerEnterAsObservable().Subscribe((e) =>
-            {
-                State = PopCardsAreaState.OnEnterTrigger;
-            });
-
-        }
 
 		protected override void OnBeforeDestroy()
 		{

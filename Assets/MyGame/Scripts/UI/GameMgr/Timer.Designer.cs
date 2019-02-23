@@ -1,4 +1,4 @@
-﻿/****************************************************************************
+/****************************************************************************
  * 2019.2 DESKTOP-UFLMNH7
  ****************************************************************************/
 
@@ -8,7 +8,7 @@ using QFramework;
 
 namespace QFramework.MyGame
 {
-	public partial class UIUsrCardsArea
+	public partial class Timer
 	{
 
 		public void Clear()
@@ -17,7 +17,7 @@ namespace QFramework.MyGame
 
 		public override string ComponentName
 		{
-			get { return "UIUsrCardsArea";}
+			get { return "Timer";}
 		}
 	}
 }

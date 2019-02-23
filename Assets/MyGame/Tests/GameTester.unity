@@ -236,7 +236,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224720355990569190, guid: c70aac0028afd42eabc9e0c55824c824,
     type: 2}
   m_PrefabInternal: {fileID: 139542893}
---- !u!1001 &422132817
+--- !u!1001 &1333942773
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -332,11 +332,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114639471426329082, guid: cd12f8ab086d08347a16f50c45900038,
-        type: 2}
-      propertyPath: Container
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd12f8ab086d08347a16f50c45900038, type: 2}

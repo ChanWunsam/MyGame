@@ -13,10 +13,10 @@ using UnityEngine.EventSystems;
 
 namespace QFramework.MyGame
 {
-    public enum UICardState
+    public enum UICardState     // todo 是否可以做成响应式
     {
-        InHand,     // 手牌区
-        InPop,      // 出牌区
+        ActivateCard,
+        DeactivateCard,
     }
 
 	public partial class UICard : UIElement
@@ -30,37 +30,25 @@ namespace QFramework.MyGame
 		{
 			Model = model;
             State = state;
+
+            RegisterUIEvent();
         }
 
-		private void Awake()
-		{
-            //AreaClick.OnMouseEnterAsObservable().Subscribe((e) =>
-            //{
-            //    Debug.Log("enter");
-            //});
-
+        void RegisterUIEvent()
+        {
             AreaClick.OnPointerEnterAsObservable().Subscribe((e) =>
             {
-                if (State == UICardState.InPop)
-                {
-                    return;
-                }
                 UICardShow.Show();
             });
 
             AreaClick.OnPointerExitAsObservable().Subscribe((e) =>
             {
-                if (State == UICardState.InPop)
-                {
-                    return;
-                }
                 UICardShow.Hide();
             });
 
             AreaClick.OnDragAsObservable().Subscribe((e) =>
             {
-                //Debug.Log(e.position);
-                if (State == UICardState.InPop)
+                if (State == UICardState.DeactivateCard)
                 {
                     return;
                 }
@@ -72,15 +60,14 @@ namespace QFramework.MyGame
 
             AreaClick.OnEndDragAsObservable().Subscribe((e) =>
             {
-                // todo
-                if (State == UICardState.InPop)
+                if (State == UICardState.DeactivateCard)
                 {
                     return;
                 }
                 Vector3 point = e.pressEventCamera.ScreenToWorldPoint(e.position);
                 SendMsg(new OnUsrCardDragMsg(this.Model));
             });
-		}
+        }
 
 		protected override void OnBeforeDestroy()
 		{

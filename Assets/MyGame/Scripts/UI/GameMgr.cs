@@ -19,7 +19,7 @@ namespace QFramework.MyGame
     using UniRx;
     using UniRx.Triggers;
     
-    //============================================================
+    //========================  Ê∂àÊÅØ/‰∫ã‰ª∂ ===========================
 
     public enum GameMgrEvent
     {
@@ -28,7 +28,9 @@ namespace QFramework.MyGame
         OnUsrCardMinus,
         OnUsrCardDrag,
         OnPopCardPlus,
-        OnPopCardMinus,
+        OnPopCardClear,
+        OnOwnerTime,
+        OnEnemyTime,
         End,
     }
 
@@ -72,16 +74,6 @@ namespace QFramework.MyGame
         }
     }
 
-    public class OnPopCardsMinusMsg : QMsg
-    {
-        public Card Data;
-
-        public OnPopCardsMinusMsg(Card data) : base((int)GameMgrEvent.OnPopCardMinus)
-        {
-            Data = data;
-        }
-    }
-
     //============================================================
     
 
@@ -105,61 +97,83 @@ namespace QFramework.MyGame
         
         protected override void ProcessMsg(int eventId, QFramework.QMsg msg)
         {
-            if (eventId == (int)GameMgrEvent.OnUsrCardPlus)
+            switch (eventId)
             {
-                var plusMsg = msg as OnUsrCardsPlusMsg;
-                //mData.HandCardModel.Data.Add(plusMsg.Data);
-                UIUsrCardsArea.OnUsrCardNumPlus(UICard, plusMsg.Data);
-            }
-            else if (eventId == (int)GameMgrEvent.OnUsrCardMinus)
-            {
-                var minusMsg = msg as OnUsrCardsMinusMsg;
-                //mData.HandCardModel.Data.Remove(minusMsg.Data);
-                UIUsrCardsArea.OnUsrCardNumMinus(minusMsg.Data);
-            }
-            else if (eventId == (int)GameMgrEvent.OnUsrCardDrag)    // æﬂ”–Ãÿ ‚µÿŒª£¨–Ë”≈ªØ
-            {
-                var dragMsg = msg as OnUsrCardDragMsg;
-                // todo test
-                SendMsg(new OnUsrCardsMinusMsg(dragMsg.Data));      // »›“◊≤˙…˙¥Û¡øGC≤Ÿ◊˜£¨–Ë”√pool∏ƒ…∆
-                if (UIUsrPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
+                case (int)GameMgrEvent.OnOwnerTime:
+                    SendMsg(new OnUsrCardsPlusMsg(new Card()));     // todo ÂÆûÁé∞ÈöèÊú∫Âåñ
+                    UIUsrCardsArea.OnActivateCards();
+                    break;
+
+                case (int)GameMgrEvent.OnEnemyTime:
+                    UIUsrCardsArea.OnDeactivateCards();
+                    break;
+
+                case (int)GameMgrEvent.OnUsrCardDrag:
                 {
-                    SendMsg(new OnPopCardsPlusMsg(dragMsg.Data));
-                    UIUsrPopCardsArea.State = PopCardsAreaState.Normal;
+                    var usrDragMsg = msg as OnUsrCardDragMsg;
+
+                    SendMsg(new OnUsrCardsMinusMsg(usrDragMsg.Data));      // todo ÂÆπÊòì‰∫ßÁîüÂ§ßÈáèGCÊìç‰ΩúÔºåÈúÄÁî®poolÊîπÂñÑ
+                    if (UIUsrPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
+                    {
+                        SendMsg(new OnPopCardsPlusMsg(usrDragMsg.Data));
+                        UIUsrPopCardsArea.State = PopCardsAreaState.Normal;
+                    }
+                    else
+                    {
+                        SendMsg(new OnUsrCardsPlusMsg(usrDragMsg.Data));
+                    }
+                    break;
                 }
-                else
-                {
-                    SendMsg(new OnUsrCardsPlusMsg(dragMsg.Data));
-                }
-            }
-            else if (eventId == (int)GameMgrEvent.OnPopCardPlus)
-            {
-                var plusMsg = msg as OnPopCardsPlusMsg;
-                //mData.PopCardModel.Data.Add(plusMsg.Data);
-                UIUsrPopCardsArea.OnPopCardNumPlus(UICard, plusMsg.Data);
-            }
-            else if (eventId == (int)GameMgrEvent.OnUsrCardMinus)
-            {
-                var minusMsg = msg as OnUsrCardsMinusMsg;
-                //mData.PopCardModel.Data.Remove(minusMsg.Data);
-                UIUsrPopCardsArea.OnPopCardNumMinus(minusMsg.Data);
+
+                case (int)GameMgrEvent.OnUsrCardPlus:
+                    var usrPlusMsg = msg as OnUsrCardsPlusMsg;
+                    UIUsrCardsArea.OnUsrCardNumPlus(UICard, usrPlusMsg.Data);
+                    break;
+
+                case (int)GameMgrEvent.OnUsrCardMinus:
+                    var usrMinusMsg = msg as OnUsrCardsMinusMsg;
+                    UIUsrCardsArea.OnUsrCardNumMinus(usrMinusMsg.Data);
+                    break;
+
+                case (int)GameMgrEvent.OnPopCardPlus:
+                    var popPlusMsg = msg as OnPopCardsPlusMsg;
+                    UIUsrPopCardsArea.OnPopCardNumPlus(UICard, popPlusMsg.Data);
+                    break;
+
+                case (int)GameMgrEvent.OnPopCardClear:
+                    UIUsrPopCardsArea.OnPopCardsClear();
+                    break;
+
+                default:
+                    Debug.Log(eventId);
+                    break;
             }
         }
         
         protected override void OnInit(QFramework.IUIData uiData)
         {
             mData = uiData as GameMgrData ?? new GameMgrData();
-            // please add init code here
 
+            // ÂàùÂßãÂåñÊâãÁâåÂå∫
             UIUsrCardsArea.Init(UICard, mData.HandCardModel);
+            
+            // ÂÆöÊó∂Âô®
+            Timer.Init();
 
+            RegisterEvents();
+        }
+
+        void RegisterEvents()
+        {
             RegisterEvent(GameMgrEvent.OnUsrCardPlus);
             RegisterEvent(GameMgrEvent.OnUsrCardMinus);
             RegisterEvent(GameMgrEvent.OnUsrCardDrag);
             RegisterEvent(GameMgrEvent.OnPopCardPlus);
-            RegisterEvent(GameMgrEvent.OnPopCardMinus);
+            RegisterEvent(GameMgrEvent.OnPopCardClear);
+            RegisterEvent(GameMgrEvent.OnOwnerTime);
+            RegisterEvent(GameMgrEvent.OnEnemyTime);
         }
-        
+
         protected override void OnOpen(QFramework.IUIData uiData)
         {
             // todo
