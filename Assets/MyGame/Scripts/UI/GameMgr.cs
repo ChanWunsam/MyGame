@@ -24,13 +24,16 @@ namespace QFramework.MyGame
     public enum GameMgrEvent
     {
         Start = QMgrID.UI,
-        OnUsrCardPlus,
-        OnUsrCardMinus,
-        OnUsrCardDrag,
-        OnPopCardPlus,
-        OnPopCardClear,
         OnOwnerTime,
         OnEnemyTime,
+        OnUsrCardDrag,
+        OnUsrCardPlus,
+        OnUsrCardMinus,
+        OnPopCardPlus,
+        OnPopCardClear,
+        OnEnemyCardDrag,
+        OnEnemyCardPlus,
+        OnEnemyCardMinus,
         End,
     }
 
@@ -74,12 +77,52 @@ namespace QFramework.MyGame
         }
     }
 
-    //============================================================
-    
+    public class OnEnemyCardsPlusMsg : QMsg
+    {
+        public Card Data;
 
+        public OnEnemyCardsPlusMsg(Card data) : base((int)GameMgrEvent.OnEnemyCardPlus)
+        {
+            Data = data;
+        }
+    }
+
+    public class OnEnemyCardsMinusMsg : QMsg
+    {
+        public Card Data;
+
+        public OnEnemyCardsMinusMsg(Card data) : base((int)GameMgrEvent.OnEnemyCardMinus)
+        {
+            Data = data;
+        }
+    }
+
+    public class OnEnemyCardDragMsg : QMsg
+    {
+        public Card Data;
+
+        public OnEnemyCardDragMsg(Card data) : base((int)GameMgrEvent.OnEnemyCardDrag)
+        {
+            Data = data;
+        }
+    }
+
+    //============================================================
+
+    
     public class GameMgrData : QFramework.UIPanelData
     {
         public CardList HandCardModel = new CardList()
+        {
+            Data = new List<Card>()
+            {
+                new Card() {HP_damage = 20, MP_need = 10},
+                new Card() {HP_damage = 30, MP_need = 10},
+                new Card() {HP_damage = 40, MP_need = 10},
+            }
+        };
+
+        public CardList EnemyChardModel = new CardList()
         {
             Data = new List<Card>()
             {
@@ -102,46 +145,80 @@ namespace QFramework.MyGame
                 case (int)GameMgrEvent.OnOwnerTime:
                     SendMsg(new OnUsrCardsPlusMsg(new Card()));     // todo 实现随机化
                     UIUsrCardsArea.OnActivateCards();
+                    UIEnemyCardsArea.OnDeactivateCards();
                     break;
 
                 case (int)GameMgrEvent.OnEnemyTime:
-                    UIUsrCardsArea.OnDeactivateCards();
+                    SendMsg(new OnEnemyCardsPlusMsg(new Card()));
+                    UIUsrCardsArea.OnDeactivateCards();              // todo 卡牌处于拖动状态会有bug
+                    UIEnemyCardsArea.OnActivateCards();
                     break;
 
+                //======================================================
+
                 case (int)GameMgrEvent.OnUsrCardDrag:
-                {
                     var usrDragMsg = msg as OnUsrCardDragMsg;
 
                     SendMsg(new OnUsrCardsMinusMsg(usrDragMsg.Data));      // todo 容易产生大量GC操作，需用pool改善
-                    if (UIUsrPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
+                    if (UIPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
                     {
                         SendMsg(new OnPopCardsPlusMsg(usrDragMsg.Data));
-                        UIUsrPopCardsArea.State = PopCardsAreaState.Normal;
+
+                        UIPopCardsArea.State = PopCardsAreaState.Normal;
                     }
                     else
                     {
-                        SendMsg(new OnUsrCardsPlusMsg(usrDragMsg.Data));
+                        SendMsg(new OnEnemyCardsPlusMsg(usrDragMsg.Data));
                     }
                     break;
-                }
 
                 case (int)GameMgrEvent.OnUsrCardPlus:
-                    var usrPlusMsg = msg as OnUsrCardsPlusMsg;
-                    UIUsrCardsArea.OnUsrCardNumPlus(UICard, usrPlusMsg.Data);
+                    var usrPlusMsg = msg as OnEnemyCardsPlusMsg;
+                    UIUsrCardsArea.OnCardsNumPlus(UICard, usrPlusMsg.Data);
                     break;
 
                 case (int)GameMgrEvent.OnUsrCardMinus:
                     var usrMinusMsg = msg as OnUsrCardsMinusMsg;
-                    UIUsrCardsArea.OnUsrCardNumMinus(usrMinusMsg.Data);
+                    UIUsrCardsArea.OnCardsNumMinus(usrMinusMsg.Data);
                     break;
+
+                //============================================================
+
+                case (int)GameMgrEvent.OnEnemyCardDrag:
+                    var enemyDragMsg = msg as OnEnemyCardDragMsg;
+
+                    SendMsg(new OnUsrCardsMinusMsg(enemyDragMsg.Data));      // todo 容易产生大量GC操作，需用pool改善
+                    if (UIPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
+                    {
+                        SendMsg(new OnPopCardsPlusMsg(enemyDragMsg.Data));
+
+                        UIPopCardsArea.State = PopCardsAreaState.Normal;
+                    }
+                    else
+                    {
+                        SendMsg(new OnEnemyCardsPlusMsg(enemyDragMsg.Data));
+                    }
+                    break;
+
+                case (int)GameMgrEvent.OnEnemyCardPlus:
+                    var enemyPlusMsg = msg as OnEnemyCardsPlusMsg;
+                    UIEnemyCardsArea.OnCardsNumPlus(UICard, enemyPlusMsg.Data);
+                    break;
+
+                case (int)GameMgrEvent.OnEnemyCardMinus:
+                    var enemyMinusMsg = msg as OnEnemyCardsMinusMsg;
+                    UIEnemyCardsArea.OnCardsNumMinus(enemyMinusMsg.Data);
+                    break;
+
+                //====================================================================
 
                 case (int)GameMgrEvent.OnPopCardPlus:
                     var popPlusMsg = msg as OnPopCardsPlusMsg;
-                    UIUsrPopCardsArea.OnPopCardNumPlus(UICard, popPlusMsg.Data);
+                    UIPopCardsArea.OnCardNumPlus(UICard, popPlusMsg.Data);
                     break;
 
                 case (int)GameMgrEvent.OnPopCardClear:
-                    UIUsrPopCardsArea.OnPopCardsClear();
+                    UIPopCardsArea.OnPopCardsClear();
                     break;
 
                 default:
@@ -156,6 +233,7 @@ namespace QFramework.MyGame
 
             // 初始化手牌区
             UIUsrCardsArea.Init(UICard, mData.HandCardModel);
+            UIEnemyCardsArea.Init(UICard, mData.EnemyChardModel);
             
             // 定时器
             Timer.Init();
@@ -168,6 +246,9 @@ namespace QFramework.MyGame
             RegisterEvent(GameMgrEvent.OnUsrCardPlus);
             RegisterEvent(GameMgrEvent.OnUsrCardMinus);
             RegisterEvent(GameMgrEvent.OnUsrCardDrag);
+            RegisterEvent(GameMgrEvent.OnEnemyCardDrag);
+            RegisterEvent(GameMgrEvent.OnEnemyCardPlus);
+            RegisterEvent(GameMgrEvent.OnEnemyCardMinus);
             RegisterEvent(GameMgrEvent.OnPopCardPlus);
             RegisterEvent(GameMgrEvent.OnPopCardClear);
             RegisterEvent(GameMgrEvent.OnOwnerTime);

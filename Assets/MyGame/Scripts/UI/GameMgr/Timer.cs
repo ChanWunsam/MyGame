@@ -23,6 +23,7 @@ namespace QFramework.MyGame
 
 		public void Init()
 		{
+            // todo 之后要做结束打断效果
             InvokeRepeating("ChangeGameState", 10, 10);
 
             State.Subscribe((state) =>

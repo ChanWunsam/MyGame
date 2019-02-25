@@ -27,10 +27,13 @@ namespace QFramework.MyGame
         public UICard UICard;
         
         [SerializeField()]
-        public UIUsrPopCardsArea UIUsrPopCardsArea;
+        public UIUsrCardsArea UIUsrCardsArea;
         
         [SerializeField()]
-        public UIUsrCardsArea UIUsrCardsArea;
+        public UIPopCardsArea UIPopCardsArea;
+        
+        [SerializeField()]
+        public UIEnemyCardsArea UIEnemyCardsArea;
         
         [SerializeField()]
         public Timer Timer;
@@ -53,8 +56,9 @@ namespace QFramework.MyGame
         protected override void ClearUIComponents()
         {
             UICard = null;
-            UIUsrPopCardsArea = null;
             UIUsrCardsArea = null;
+            UIPopCardsArea = null;
+            UIEnemyCardsArea = null;
             Timer = null;
             mData = null;
         }

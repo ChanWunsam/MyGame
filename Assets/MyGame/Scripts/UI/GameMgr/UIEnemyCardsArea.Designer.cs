@@ -8,7 +8,7 @@ using QFramework;
 
 namespace QFramework.MyGame
 {
-	public partial class Timer
+	public partial class UIEnemyCardsArea
 	{
 
 		public void Clear()
@@ -17,7 +17,7 @@ namespace QFramework.MyGame
 
 		public override string ComponentName
 		{
-			get { return "Timer";}
+			get { return "UIEnemyCardsArea";}
 		}
 	}
 }

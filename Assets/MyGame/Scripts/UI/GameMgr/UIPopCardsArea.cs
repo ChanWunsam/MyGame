@@ -1,5 +1,5 @@
 /****************************************************************************
- * 2019.2 sysu_wuzh’s Mac mini
+ * 2019.2 DESKTOP-UFLMNH7
  ****************************************************************************/
 
 using System;
@@ -7,36 +7,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
+using UniRx;
+using UniRx.Triggers;
 
 namespace QFramework.MyGame
 {
-	public partial class UIUsrCardsArea : UIElement
+    public enum PopCardsAreaState
+    {
+        Normal,
+        OnEnterTrigger,
+    }
+
+	public partial class UIPopCardsArea : UIElement
 	{
-		public CardList Model = new CardList();
+        public CardList Model = new CardList();
 
         public int left_point = -250;
         public int right_point = 250;
         private int distance;
-        
+
+        public PopCardsAreaState State;
+
         Dictionary<Card, UICard> FromDataToCardDict = new Dictionary<Card, UICard>();
-
-        public void Init(UICard CardPrefab, CardList model)
-        {
-            Model = model;
-            distance = (right_point - left_point) / (Model.Data.Count + 1);
-            for (int i = 0; i < model.Data.Count; i++)
-            {
-                Card data = model.Data[i];
-                CreateCard(CardPrefab, data, i);
-            }
-        }
-
+      
         private void Awake()
-        {
-            
+		{
+            State = PopCardsAreaState.Normal;
+
+            // todo 需优化，第一下不能响应
+            AreaClick.OnPointerEnterAsObservable().Subscribe((e) =>
+            {
+                State = PopCardsAreaState.OnEnterTrigger;
+            });
+
         }
 
-        public void OnCardsNumPlus(UICard CardPrefab, Card data)
+        public void OnCardNumPlus(UICard CardPrefab, Card data)
         {
             int index = 0;
             UICard card = null;
@@ -55,20 +61,18 @@ namespace QFramework.MyGame
             }
             Model.Data.Add(data);
             CreateCard(CardPrefab, data, index);
+            AreaClick.transform.SetSiblingIndex(this.transform.childCount - 1); // 将AreaClick设置为子物体顺序最后
         }
 
-        public void OnCardsNumMinus(Card data)
+        public void OnPopCardsClear()
         {
-            UICard card = FromDataToCardDict[data];
-            Model.Data.Remove(data);
-            FromDataToCardDict.Remove(data);
-            card.DestroyGameObj();
-            distance = (right_point - left_point) / (Model.Data.Count + 1);
-            for (int i = 0; i < Model.Data.Count; i++)
+            FromDataToCardDict.Values.ForEach((card) =>
             {
-                FromDataToCardDict[Model.Data[i]].LocalIdentity()
-                        .LocalPositionX(left_point + distance * (i + 1));
-            }
+                card.DestroyGameObj();
+            });
+            FromDataToCardDict.Clear();
+            Model.Data.Clear();
+            Log.I("Clear All Pop Card");
         }
 
         // index 从0开始
@@ -79,31 +83,14 @@ namespace QFramework.MyGame
                     .LocalIdentity()
                     .LocalPositionX(left_point + distance * (index + 1))
                     .ApplySelfTo(self => FromDataToCardDict.Add(data, self))
-                    .ApplySelfTo(self => self.Init(data, UICardState.ActivateCard))
+                    .ApplySelfTo(self => self.Init(data, UICardState.DeactivateCard))
                     .Show();
         }
 
-        public void OnActivateCards()
-        {
-            FromDataToCardDict.Values.ForEach((card) =>
-            {
-                card.State = UICardState.ActivateCard;
-            });
-            Log.I("Activate Usr Card");
-        }
 
-        public void OnDeactivateCards()
-        {
-            FromDataToCardDict.Values.ForEach((card) =>
-            {
-                card.State = UICardState.DeactivateCard;
-            });
-            Log.I("Deactivate Usr Card");
-        }
-        
 		protected override void OnBeforeDestroy()
 		{
             this.DestroyAllChild();
-		}
+        }
 	}
 }

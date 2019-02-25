@@ -236,7 +236,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224720355990569190, guid: c70aac0028afd42eabc9e0c55824c824,
     type: 2}
   m_PrefabInternal: {fileID: 139542893}
---- !u!1001 &1333942773
+--- !u!1001 &1204903736
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
