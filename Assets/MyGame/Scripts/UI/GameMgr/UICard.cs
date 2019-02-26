@@ -40,6 +40,9 @@ namespace QFramework.MyGame
             State = state;
             Type = type;
 
+            MP_need.text = "消耗MP：" + Model.MP_need.ToString();
+            HP_damage.text = "攻击HP：" + Model.HP_damage.ToString();
+
             RegisterUIEvent();
         }
 

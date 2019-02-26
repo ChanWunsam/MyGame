@@ -24,6 +24,15 @@ namespace QFramework.MyGame
         public const string NAME = "GameMgr";
         
         [SerializeField()]
+        public Timer Timer;
+        
+        [SerializeField()]
+        public UIUsrMsg UIUsrMsg;
+
+        [SerializeField()]
+        public UIEnemyMsg UIEnemyMsg;
+
+        [SerializeField()]
         public UICard UICard;
         
         [SerializeField()]
@@ -34,9 +43,6 @@ namespace QFramework.MyGame
         
         [SerializeField()]
         public UIEnemyCardsArea UIEnemyCardsArea;
-        
-        [SerializeField()]
-        public Timer Timer;
         
         private GameMgrData mPrivateData = null;
         
@@ -55,11 +61,13 @@ namespace QFramework.MyGame
         
         protected override void ClearUIComponents()
         {
+            Timer = null;
+            UIUsrMsg = null;
+            UIEnemyMsg = null;
             UICard = null;
             UIUsrCardsArea = null;
             UIPopCardsArea = null;
             UIEnemyCardsArea = null;
-            Timer = null;
             mData = null;
         }
     }
