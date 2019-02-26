@@ -83,7 +83,7 @@ namespace QFramework.MyGame
                     .LocalIdentity()
                     .LocalPositionX(left_point + distance * (index + 1))
                     .ApplySelfTo(self => FromDataToCardDict.Add(data, self))
-                    .ApplySelfTo(self => self.Init(data, UICardState.DeactivateCard))
+                    .ApplySelfTo(self => self.Init(data, UICardState.DeactivateCard, UICardType.PopCard))
                     .Show();
         }
 

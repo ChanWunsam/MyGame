@@ -14,7 +14,7 @@ namespace QFramework
 			switch (msg.ManagerID)
 			{
 				case QMgrID.Game:
-					Player.GameManager.Instance.SendMsg(msg);
+//					Player.GameManager.Instance.SendMsg(msg);
 					break;
 			}
 		}

@@ -256,6 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab82d44a6a245d4aa6ba2fd4b6c95b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left_point: -250
+  right_point: 250
 --- !u!114 &114299970831621012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -588,6 +590,7 @@ MonoBehaviour:
   left_point: -250
   right_point: 250
   State: 0
+  AreaClick: {fileID: 114401805924750510}
 --- !u!114 &114961804015231696
 MonoBehaviour:
   m_ObjectHideFlags: 1

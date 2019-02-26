@@ -19,17 +19,26 @@ namespace QFramework.MyGame
         DeactivateCard,
     }
 
+    public enum UICardType
+    {
+        OwnerCard,
+        EnemyCard,
+        PopCard,
+    }
+
 	public partial class UICard : UIElement
 	{
 		public Card Model = new Card();
         public UICardState State;
+        public UICardType Type; 
         bool isDrag = false;
 
 
-		public void Init(Card model, UICardState state)
+		public void Init(Card model, UICardState state, UICardType type)
 		{
 			Model = model;
             State = state;
+            Type = type;
 
             RegisterUIEvent();
         }
@@ -64,8 +73,15 @@ namespace QFramework.MyGame
                 {
                     return;
                 }
-                Vector3 point = e.pressEventCamera.ScreenToWorldPoint(e.position);
-                SendMsg(new OnUsrCardDragMsg(this.Model));
+                
+                if (this.Type == UICardType.OwnerCard)
+                {
+                    SendMsg(new OnUsrCardDragMsg(this.Model));
+                }
+                else if (this.Type == UICardType.EnemyCard)
+                {
+                    SendMsg(new OnEnemyCardDragMsg(this.Model));
+                }
             });
         }
 

@@ -10,14 +10,144 @@
         <e p="App.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="UI" t="Include">
-            <e p="MyGameBg" t="Include">
+            <e p="GameMgr" t="Include">
+              <e p="Timer.cs" t="Include" />
+              <e p="Timer.Designer.cs" t="Include" />
               <e p="UICard.cs" t="Include" />
               <e p="UICard.Designer.cs" t="Include" />
+              <e p="UIEnemyCardsArea.cs" t="Include" />
+              <e p="UIEnemyCardsArea.Designer.cs" t="Include" />
+              <e p="UIPopCardsArea.cs" t="Include" />
+              <e p="UIPopCardsArea.Designer.cs" t="Include" />
               <e p="UIUsrCardsArea.cs" t="Include" />
               <e p="UIUsrCardsArea.Designer.cs" t="Include" />
             </e>
-            <e p="MyGameBg.cs" t="Include" />
-            <e p="MyGameBg.Designer.cs" t="Include" />
+            <e p="GameMgr.cs" t="Include" />
+            <e p="GameMgr.Designer.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Assets/Other" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Commands" t="Include">
+            <e p="Command.cs" t="Include" />
+            <e p="CreatureAttackCommand.cs" t="Include" />
+            <e p="CreatureDieCommand.cs" t="Include" />
+            <e p="DealDamageCommand.cs" t="Include" />
+            <e p="DelayCommand.cs" t="Include" />
+            <e p="DrawACardCommand.cs" t="Include" />
+            <e p="GameOverCommand.cs" t="Include" />
+            <e p="PlayACreatureCommand.cs" t="Include" />
+            <e p="PlayASpellCardCommand.cs" t="Include" />
+            <e p="ShowMessageCommand.cs" t="Include" />
+            <e p="StartATurnCommand.cs" t="Include" />
+            <e p="UpdateManaCrystalsCommand.cs" t="Include" />
+          </e>
+          <e p="Dragging" t="Include">
+            <e p="DragCreatureAttack.cs" t="Include" />
+            <e p="DragCreatureOnTable.cs" t="Include" />
+            <e p="Draggable.cs" t="Include" />
+            <e p="DraggingActions.cs" t="Include" />
+            <e p="DraggingTest" t="Include">
+              <e p="DraggableTest.cs" t="Include" />
+              <e p="DraggableTestWithActions.cs" t="Include" />
+              <e p="DraggingActionsTest.cs" t="Include" />
+              <e p="DraggingActionsTestReturn.cs" t="Include" />
+              <e p="DragOnTargetTest.cs" t="Include" />
+            </e>
+            <e p="DragHeroPowerActions.cs" t="Include" />
+            <e p="DragSpellNoTarget.cs" t="Include" />
+            <e p="DragSpellOnTarget.cs" t="Include" />
+          </e>
+          <e p="Logic" t="Include">
+            <e p="BattleStats.cs" t="Include" />
+            <e p="Buffs" t="Include">
+              <e p="Buff.cs" t="Include" />
+            </e>
+            <e p="CardLogic.cs" t="Include" />
+            <e p="Character.cs" t="Include" />
+            <e p="CreatureLogic.cs" t="Include" />
+            <e p="CreatureScripts" t="Include">
+              <e p="BiteOwner.cs" t="Include" />
+              <e p="CreatureEffect.cs" t="Include" />
+            </e>
+            <e p="Deck.cs" t="Include" />
+            <e p="Hand.cs" t="Include" />
+            <e p="IDHolder.cs" t="Include" />
+            <e p="MovesHighlighter.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="RopeTimer.cs" t="Include" />
+            <e p="SpellScripts" t="Include">
+              <e p="DamageAllCreatures.cs" t="Include" />
+              <e p="DealDamageToTarget.cs" t="Include" />
+              <e p="GiveManaBonus.cs" t="Include" />
+              <e p="HeroPower2Face.cs" t="Include" />
+              <e p="HeroPowerDrawCardTakeDamage.cs" t="Include" />
+              <e p="SpellEffect.cs" t="Include" />
+            </e>
+            <e p="Table.cs" t="Include" />
+            <e p="TurnManager.cs" t="Include" />
+            <e p="TurnsAndAI" t="Include">
+              <e p="AITurnMaker.cs" t="Include" />
+              <e p="PlayerTurnMaker.cs" t="Include" />
+              <e p="TurnMaker.cs" t="Include" />
+            </e>
+          </e>
+          <e p="RaycastExample.cs" t="Include" />
+          <e p="SceneReloader.cs" t="Include" />
+          <e p="ShufflingExtention.cs" t="Include" />
+          <e p="SO Asset Scripts" t="Include">
+            <e p="CardAsset" t="Include">
+              <e p="CardAsset.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="CardUnityIntegration.cs" t="Include" />
+              </e>
+            </e>
+            <e p="CharacterAsset" t="Include">
+              <e p="CharacterAsset.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="CharacterUnityIntegration.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="ScriptableObjectUtility2.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UI Scripts" t="Include">
+            <e p="EndTurnButton.cs" t="Include" />
+            <e p="GlowBlink.cs" t="Include" />
+            <e p="Outlines by N Yoda" t="Include">
+              <e p="BoxOutline.cs" t="Include" />
+              <e p="CircleOutline.cs" t="Include" />
+              <e p="ListPool.cs" t="Include" />
+              <e p="ModifiedShadow.cs" t="Include" />
+              <e p="ObjectPool.cs" t="Include" />
+              <e p="Outline8.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Visual" t="Include">
+            <e p="CardVisualScripts" t="Include">
+              <e p="BetterCardRotation.cs" t="Include" />
+              <e p="OneCardManager.cs" t="Include" />
+              <e p="WhereIsTheCardOrCreature.cs" t="Include" />
+            </e>
+            <e p="CreatureAttackVisual.cs" t="Include" />
+            <e p="DamageEffect.cs" t="Include" />
+            <e p="DamageEffectTest.cs" t="Include" />
+            <e p="GlobalSettings.cs" t="Include" />
+            <e p="HandVisual.cs" t="Include" />
+            <e p="HeroPowerButton.cs" t="Include" />
+            <e p="HoverPreview.cs" t="Include" />
+            <e p="IDFactory.cs" t="Include" />
+            <e p="ManaPoolVisual.cs" t="Include" />
+            <e p="MessageManager.cs" t="Include" />
+            <e p="OneCreatureManager.cs" t="Include" />
+            <e p="PlayerArea.cs" t="Include" />
+            <e p="PlayerDeckVisual.cs" t="Include" />
+            <e p="PlayerPortraitVisual.cs" t="Include" />
+            <e p="RopeVisual.cs" t="Include" />
+            <e p="SameDistanceChildren.cs" t="Include" />
+            <e p="TableVisual.cs" t="Include" />
           </e>
         </e>
       </e>
@@ -158,9 +288,11 @@
                   <e p="UIGamePanel.cs" t="Include" />
                   <e p="UIGamePanel.Designer.cs" t="Include" />
                   <e p="UIMenuPanel.cs" t="Include" />
+                  <e p="UIMenuPanel.Designer.cs" t="Include" />
                   <e p="UISectionPanel.cs" t="Include" />
                   <e p="UISectionPanel.Designer.cs" t="Include" />
                   <e p="UISettingPanel.cs" t="Include" />
+                  <e p="UISettingPanel.Designer.cs" t="Include" />
                 </e>
                 <e p="Util" t="Include">
                   <e p="UIEventID.cs" t="Include" />
@@ -2486,6 +2618,7 @@
           <e p="UI" t="Include">
             <e p="PanelCompletedList" t="Include">
               <e p="UICompletedItem.cs" t="Include" />
+              <e p="UICompletedItem.Designer.cs" t="Include" />
             </e>
             <e p="PanelCompletedList.cs" t="Include" />
             <e p="PanelCompletedList.Designer.cs" t="Include" />
@@ -2495,6 +2628,7 @@
               <e p="UIListCtrl.cs" t="Include" />
               <e p="UIListCtrl.Designer.cs" t="Include" />
               <e p="UITodoItem.cs" t="Include" />
+              <e p="UITodoItem.Designer.cs" t="Include" />
             </e>
             <e p="PanelTodoList.cs" t="Include" />
             <e p="PanelTodoList.Designer.cs" t="Include" />

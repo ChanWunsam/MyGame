@@ -173,7 +173,7 @@ namespace QFramework.MyGame
                     break;
 
                 case (int)GameMgrEvent.OnUsrCardPlus:
-                    var usrPlusMsg = msg as OnEnemyCardsPlusMsg;
+                    var usrPlusMsg = msg as OnUsrCardsPlusMsg;
                     UIUsrCardsArea.OnCardsNumPlus(UICard, usrPlusMsg.Data);
                     break;
 
@@ -187,7 +187,7 @@ namespace QFramework.MyGame
                 case (int)GameMgrEvent.OnEnemyCardDrag:
                     var enemyDragMsg = msg as OnEnemyCardDragMsg;
 
-                    SendMsg(new OnUsrCardsMinusMsg(enemyDragMsg.Data));      // todo 容易产生大量GC操作，需用pool改善
+                    SendMsg(new OnEnemyCardsMinusMsg(enemyDragMsg.Data));      // todo 容易产生大量GC操作，需用pool改善
                     if (UIPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
                     {
                         SendMsg(new OnPopCardsPlusMsg(enemyDragMsg.Data));
