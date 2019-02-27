@@ -45,7 +45,7 @@ namespace QFramework.MyGame
     public class Card
     {
         public string name = "万智卡";
-        public int MP_need = 0;
-        public int HP_damage = 0;
+        public int MP_need = 10;
+        public int HP_damage = 10;
     }
 }

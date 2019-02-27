@@ -57,11 +57,11 @@ namespace QFramework.MyGame
         }
     }
 
-    public class OnUsrCardDragMsg : QMsg
+    public class OnUsrCardsDragMsg : QMsg
     {
         public Card Data;
 
-        public OnUsrCardDragMsg(Card data) : base((int)GameMgrEvent.OnUsrCardDrag)
+        public OnUsrCardsDragMsg(Card data) : base((int)GameMgrEvent.OnUsrCardDrag)
         {
             Data = data;
         }
@@ -157,7 +157,7 @@ namespace QFramework.MyGame
                 //======================================================
 
                 case (int)GameMgrEvent.OnUsrCardDrag:
-                    var usrDragMsg = msg as OnUsrCardDragMsg;
+                    var usrDragMsg = msg as OnUsrCardsDragMsg;
 
                     SendMsg(new OnUsrCardsMinusMsg(usrDragMsg.Data));      // todo 容易产生大量GC操作，需用pool改善
                     if (UIPopCardsArea.State == PopCardsAreaState.OnEnterTrigger && UIUsrMsg.TakeAttack(usrDragMsg.Data.MP_need))
@@ -168,7 +168,7 @@ namespace QFramework.MyGame
                     }
                     else
                     {
-                        SendMsg(new OnEnemyCardsPlusMsg(usrDragMsg.Data));
+                        SendMsg(new OnUsrCardsPlusMsg(usrDragMsg.Data));
                     }
                     break;
 

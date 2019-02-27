@@ -79,7 +79,7 @@ namespace QFramework.MyGame
                 
                 if (this.Type == UICardType.OwnerCard)
                 {
-                    SendMsg(new OnUsrCardDragMsg(this.Model));
+                    SendMsg(new OnUsrCardsDragMsg(this.Model));
                 }
                 else if (this.Type == UICardType.EnemyCard)
                 {

@@ -599,7 +599,7 @@ MonoBehaviour:
   left_point: -250
   right_point: 250
   State: 0
-  AreaClick: {fileID: 0}
+  AreaClick: {fileID: 114595286175466804}
 --- !u!114 &114516617473631212
 MonoBehaviour:
   m_ObjectHideFlags: 1
