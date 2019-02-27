@@ -160,10 +160,10 @@ namespace QFramework.MyGame
                     var usrDragMsg = msg as OnUsrCardDragMsg;
 
                     SendMsg(new OnUsrCardsMinusMsg(usrDragMsg.Data));      // todo 容易产生大量GC操作，需用pool改善
-                    if (UIPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
+                    if (UIPopCardsArea.State == PopCardsAreaState.OnEnterTrigger && UIUsrMsg.TakeAttack(usrDragMsg.Data.MP_need))
                     {
+                        UIEnemyMsg.GetDamage(usrDragMsg.Data.HP_damage);
                         SendMsg(new OnPopCardsPlusMsg(usrDragMsg.Data));
-
                         UIPopCardsArea.State = PopCardsAreaState.Normal;
                     }
                     else
@@ -188,10 +188,10 @@ namespace QFramework.MyGame
                     var enemyDragMsg = msg as OnEnemyCardDragMsg;
 
                     SendMsg(new OnEnemyCardsMinusMsg(enemyDragMsg.Data));      // todo 容易产生大量GC操作，需用pool改善
-                    if (UIPopCardsArea.State == PopCardsAreaState.OnEnterTrigger)
+                    if (UIPopCardsArea.State == PopCardsAreaState.OnEnterTrigger && UIEnemyMsg.TakeAttack(enemyDragMsg.Data.MP_need))
                     {
+                        UIUsrMsg.GetDamage(enemyDragMsg.Data.HP_damage);
                         SendMsg(new OnPopCardsPlusMsg(enemyDragMsg.Data));
-
                         UIPopCardsArea.State = PopCardsAreaState.Normal;
                     }
                     else
@@ -234,7 +234,11 @@ namespace QFramework.MyGame
             // 初始化手牌区
             UIUsrCardsArea.Init(UICard, mData.HandCardModel);
             UIEnemyCardsArea.Init(UICard, mData.EnemyChardModel);
-            
+
+            // 初始化状态
+            UIUsrMsg.Init(100, 100);
+            UIEnemyMsg.Init(100, 100);
+
             // 定时器
             Timer.Init();
 

@@ -25,14 +25,26 @@ namespace QFramework.MyGame
 
         public void GetDamage(int minus_hp)
         {
+            if (minus_hp > mHP)
+            {
+                Log.W("Usr has dead!");
+                Application.Quit();
+                return;
+            }
             mHP -= minus_hp;
             HP.text = "HP:" + mHP.ToString();
         }
 
-        public void TakeAttack(int minus_mp)
+        public bool TakeAttack(int minus_mp)
         {
+            if (minus_mp > mMP)
+            {
+                Log.I("Usr's attack Invalid");
+                return false;
+            }
             mMP -= minus_mp;
             MP.text = "MP:" + mMP.ToString();
+            return true;
         }
 
 		private void Awake()
